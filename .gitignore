@@ -22,3 +22,6 @@ yarn-error.log*
 
 # Windsurf Pipeline (local development tool only - not committed)
 windsurf-pipeline/
+.pipeline-status
+PIPELINE_STATUS.md
+.vscode/pipeline-status.json

@@ -39,4 +39,3 @@ export default App;
 
 // Embedded pipeline test comment
 // Test pre-commit hook trigger
-// testing
