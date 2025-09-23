@@ -23,12 +23,7 @@
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
     "lint:check": "eslint src --ext .js,.jsx,.ts,.tsx --max-warnings 0",
-    "prepare": "husky install",
-    "pipeline": "node windsurf-pipeline/local-pipeline/run-pipeline.js",
-    "pipeline:watch": "node windsurf-pipeline/local-pipeline/file-watcher.js",
-    "pipeline:pre-commit": "node windsurf-pipeline/local-pipeline/run-pipeline.js --mode=pre-commit",
-    "pipeline:clean": "node windsurf-pipeline/local-pipeline/cleanup-locks.js",
-    "pipeline:report": "node windsurf-pipeline/local-pipeline/code-review-generator.js"
+    "prepare": "husky install"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [

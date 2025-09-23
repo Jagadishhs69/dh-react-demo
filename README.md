@@ -6,47 +6,111 @@ A sample React application showcasing Material-UI (MUI) components and features.
 
 This project demonstrates various MUI components including:
 
-- **App Bar & Navigation** - Top navigation with branding
-- **Cards & Layout** - Responsive grid layout with elevation
-- **Forms & Inputs** - Text fields, switches, and ratings
-- **Lists & Data Display** - Contact list with icons and avatars
-- **Dialogs & Modals** - Interactive dialog components
-- **Notifications** - Snackbar alerts and feedback
-- **Theming** - Custom MUI theme configuration
-- **Icons** - Material Design icons integration
-
-## Getting Started
 
 ### Prerequisites
-
 - Node.js (version 14 or higher)
-- npm or yarn package manager
+- npm or yarn
 
 ### Installation
 
-1. Navigate to the project directory:
-   ```bash
-   cd Wind_rules
-   ```
+1. Clone the repository:
+```bash
+git clone https://github.com/Jagadishhs69/dh-react-demo.git
+cd dh-react-demo
+git checkout dh-react-demo
+```
 
 2. Install dependencies:
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
 3. Start the development server:
-   ```bash
-   npm start
-   ```
+```bash
+npm start
+```
 
-4. Open your browser and visit `http://localhost:3000`
+The app will open in your browser at `http://localhost:3000`.
 
-### Available Scripts
+## 🛡️ Code Quality System
+
+### Basic Quality Gates (Always Active)
+- **ESLint validation** - Enforces code style and catches errors
+- **Prettier formatting** - Ensures consistent code formatting
+- **Pre-commit hooks** - Validates code before commits
+
+### Enhanced Quality Gates (Optional - Local Setup)
+
+For comprehensive code quality validation, developers can optionally install the Windsurf CI/CD pipeline locally:
+
+#### Pipeline Features:
+- 🔍 **Language Detection** - Identifies project technologies
+- 📦 **Dependency Analysis** - Checks for security vulnerabilities
+- 🔍 **Code Quality Metrics** - Advanced static analysis
+- 📦 **Version Scanning** - Identifies outdated packages
+- 🔐 **Secret Detection** - Prevents credential leaks
+- 🛡️ **Security Analysis** - SAST security scanning
+
+#### Local Pipeline Setup:
+```bash
+# Contact your team lead for pipeline installation package
+# Pipeline runs automatically on commits when installed locally
+# Generates detailed code review reports
+```
+
+## 📋 Available Scripts
 
 - `npm start` - Runs the app in development mode
 - `npm run build` - Builds the app for production
 - `npm test` - Launches the test runner
-- `npm run eject` - Ejects from Create React App (one-way operation)
+- `npm run lint` - Runs ESLint to check for code issues
+- `npm run lint:fix` - Runs ESLint and fixes auto-fixable issues
+
+## 🔄 Development Workflow
+
+### Standard Workflow (All Developers)
+```bash
+# Make changes to code
+git add .
+git commit -m "Your commit message"
+# → ESLint validation runs automatically
+# → Commit succeeds if code passes basic checks
+```
+
+### Enhanced Workflow (With Local Pipeline)
+```bash
+# Make changes to code
+git add .
+git commit -m "Your commit message"
+# → ESLint validation runs
+# → Full 6-stage pipeline runs
+# → Comprehensive quality report generated
+# → Commit blocked if quality issues found
+```
+
+## 🎯 Quality Standards
+
+- ✅ No console.log statements in production code
+- ✅ Consistent code formatting (Prettier)
+- ✅ React best practices compliance
+- ✅ ESLint rule adherence
+- ✅ Security vulnerability checks (with pipeline)
+- ✅ Code complexity analysis (with pipeline)
+
+## 🤝 Contributing
+
+1. Follow the established code style
+2. Ensure all pre-commit checks pass
+3. Write meaningful commit messages
+4. Test your changes locally before committing
+
+## 📊 Features
+
+- Material-UI components for modern UI design
+- Responsive layout with Container and Grid system
+- Integrated code quality validation
+- Pre-commit hooks for automated checking
+- Optional enhanced quality pipeline for comprehensive analysis
 
 ## Project Structure
 

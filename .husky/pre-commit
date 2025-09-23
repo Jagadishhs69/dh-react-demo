@@ -7,8 +7,13 @@ echo "🔍 Running pre-commit checks..."
 echo "📝 Linting staged files..."
 npx lint-staged
 
-# Stage 2: Run Windsurf Pipeline (Complete System)
-echo "🚀 Running Windsurf CI/CD Pipeline..."
-node windsurf-pipeline/local-pipeline/run-pipeline.js --mode=pre-commit
+# Stage 2: Run Windsurf Pipeline (if available locally)
+if [ -f "windsurf-pipeline/local-pipeline/run-pipeline.js" ]; then
+  echo "🚀 Running Windsurf CI/CD Pipeline..."
+  node windsurf-pipeline/local-pipeline/run-pipeline.js --mode=pre-commit
+else
+  echo "⚠️  Windsurf Pipeline not found locally - skipping quality gates"
+  echo "💡 Install pipeline locally for full quality validation"
+fi
 
 echo "✅ Pre-commit checks completed!"

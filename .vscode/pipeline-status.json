@@ -1,6 +1,6 @@
 {
-  "text": "$(error) Pipeline failed after 16.27s",
+  "text": "$(error) Pipeline failed after 22.44s",
   "color": "#FF0000",
-  "tooltip": "Pipeline Status: failed\nLast Updated: 2025-09-23T04:28:29.828Z",
+  "tooltip": "Pipeline Status: failed\nLast Updated: 2025-09-23T09:53:04.237Z",
   "command": "workbench.action.terminal.focus"
 }
