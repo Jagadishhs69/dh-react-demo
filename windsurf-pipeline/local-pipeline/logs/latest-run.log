@@ -1,0 +1,385 @@
+[language-detection] [2025-09-09T09:14:36.431Z] [INFO] Starting language detection process 
+[language-detection] [2025-09-09T09:14:36.433Z] [INFO] Detected Node.js via package.json 
+[language-detection] [2025-09-09T09:14:36.434Z] [INFO] Final results: 1 languages detected 
+[language-detection] [2025-09-09T09:14:36.434Z] [INFO] Languages: nodejs 
+[language-detection] [2025-09-09T09:14:36.435Z] [INFO] Primary language: nodejs 
+[language-detection] [2025-09-09T09:14:36.435Z] [INFO] Detection files: package.json 
+[dependency-check] [2025-09-09T09:14:36.436Z] [INFO] Starting dependency check for languages: nodejs
+[dependency-check] [2025-09-09T09:14:36.437Z] [INFO] Checking nodejs dependencies 
+[dependency-check] [2025-09-09T09:14:43.884Z] [INFO] nodejs dependency check: SUCCESS 
+[dependency-check] [2025-09-09T09:14:43.884Z] [INFO] Dependency check completed. Overall success: true 
+[code-quality] [2025-09-09T09:14:43.885Z] [INFO] Starting code quality checks for languages: nodejs
+[code-quality] [2025-09-09T09:14:43.886Z] [INFO] Running nodejs code quality checks 
+[code-quality] [2025-09-09T09:14:43.887Z] [INFO] nodejs code quality: SUCCESS 
+[code-quality] [2025-09-09T09:14:43.888Z] [INFO] Code quality checks completed. Overall success: true 
+[tests] [2025-09-09T09:14:43.888Z] [INFO] Starting test execution for languages: nodejs
+[tests] [2025-09-09T09:14:43.889Z] [INFO] Running nodejs tests 
+[tests] [2025-09-09T09:14:43.890Z] [INFO] nodejs tests: SUCCESS 
+[tests] [2025-09-09T09:14:43.890Z] [INFO] Test execution completed. Overall success: true 
+[security-scan] [2025-09-09T09:14:43.891Z] [INFO] Starting security scans for languages: nodejs
+[security-scan] [2025-09-09T09:14:43.891Z] [INFO] Running basic security checks 
+[security-scan] [2025-09-09T09:14:43.892Z] [INFO] Basic security check: PASSED 
+[security-scan] [2025-09-09T09:14:43.893Z] [INFO] Running nodejs security scan 
+[security-scan] [2025-09-09T09:14:47.286Z] [INFO] nodejs security scan: PASSED 
+[security-scan] [2025-09-09T09:14:47.286Z] [INFO] Security scans completed. Overall success: true 
+[build] [2025-09-09T09:14:47.287Z] [INFO] Starting build verification for languages: nodejs
+[build] [2025-09-09T09:14:47.288Z] [INFO] Building nodejs project 
+[build] [2025-09-09T09:14:47.289Z] [INFO] nodejs build: SUCCESS 
+[build] [2025-09-09T09:14:47.289Z] [INFO] nodejs build: SKIPPED (no build configuration found) 
+[build] [2025-09-09T09:14:47.289Z] [INFO] Build verification completed. Overall success: true 
+[summary] [2025-09-09T09:14:47.290Z] [INFO] PIPELINE EXECUTION SUMMARY 
+[summary] [2025-09-09T09:14:47.291Z] [INFO] ================================================== 
+[summary] [2025-09-09T09:14:47.291Z] [INFO] Execution started: 2025-09-09T09:14:36.410Z 
+[summary] [2025-09-09T09:14:47.291Z] [INFO] Execution completed: 2025-09-09T09:14:47.291Z 
+[summary] [2025-09-09T09:14:47.291Z] [INFO] Total duration: 10.88 seconds 
+[summary] [2025-09-09T09:14:47.292Z] [INFO]  
+[summary] [2025-09-09T09:14:47.292Z] [INFO] STAGE RESULTS: 
+[summary] [2025-09-09T09:14:47.292Z] [INFO] Language Detection   ✅ PASS 
+[summary] [2025-09-09T09:14:47.293Z] [INFO]   Languages detected: nodejs 
+[summary] [2025-09-09T09:14:47.293Z] [INFO]   Primary language: nodejs 
+[summary] [2025-09-09T09:14:47.294Z] [INFO] Dependency Check     ✅ PASS 
+[summary] [2025-09-09T09:14:47.294Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T09:14:47.295Z] [INFO] Code Quality         ✅ PASS 
+[summary] [2025-09-09T09:14:47.295Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T09:14:47.296Z] [INFO] Tests                ✅ PASS 
+[summary] [2025-09-09T09:14:47.296Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T09:14:47.296Z] [INFO] Security Scan        ✅ PASS 
+[summary] [2025-09-09T09:14:47.297Z] [INFO]   basic: SUCCESS 
+[summary] [2025-09-09T09:14:47.297Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T09:14:47.297Z] [INFO] Build                ✅ PASS 
+[summary] [2025-09-09T09:14:47.298Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T09:14:47.298Z] [INFO]  
+[summary] [2025-09-09T09:14:47.299Z] [INFO] 🎉 PIPELINE SUCCESS: All checks passed! Code is ready for deployment. 
+[summary] [2025-09-09T09:14:47.299Z] [INFO]  
+[summary] [2025-09-09T09:14:47.299Z] [INFO] FINAL STATUS: SUCCESS 
+[summary] [2025-09-09T09:14:47.300Z] [INFO] Log files location: C:\Users\hsjagad\CascadeProjects\windsurf-cicd\local-pipeline\logs\run-2025-09-09T09-14-36-411Z 
+[language-detection] [2025-09-09T10:08:54.960Z] [INFO] Starting language detection process 
+[language-detection] [2025-09-09T10:08:54.961Z] [INFO] Detected Node.js via package.json 
+[language-detection] [2025-09-09T10:08:54.962Z] [INFO] Final results: 1 languages detected 
+[language-detection] [2025-09-09T10:08:54.962Z] [INFO] Languages: nodejs 
+[language-detection] [2025-09-09T10:08:54.962Z] [INFO] Primary language: nodejs 
+[language-detection] [2025-09-09T10:08:54.963Z] [INFO] Detection files: package.json 
+[dependency-check] [2025-09-09T10:08:54.964Z] [INFO] Starting dependency check for languages: nodejs
+[dependency-check] [2025-09-09T10:08:54.965Z] [INFO] Checking nodejs dependencies 
+[dependency-check] [2025-09-09T10:09:01.720Z] [INFO] nodejs dependency check: SUCCESS 
+[dependency-check] [2025-09-09T10:09:01.720Z] [INFO] Dependency check completed. Overall success: true 
+[code-quality] [2025-09-09T10:09:01.721Z] [INFO] Starting code quality checks for languages: nodejs
+[code-quality] [2025-09-09T10:09:01.722Z] [INFO] Running nodejs code quality checks 
+[code-quality] [2025-09-09T10:09:01.724Z] [INFO] nodejs code quality: SUCCESS 
+[code-quality] [2025-09-09T10:09:01.725Z] [INFO] Code quality checks completed. Overall success: true 
+[tests] [2025-09-09T10:09:01.725Z] [INFO] Starting test execution for languages: nodejs
+[tests] [2025-09-09T10:09:01.726Z] [INFO] Running nodejs tests 
+[tests] [2025-09-09T10:09:01.727Z] [INFO] nodejs tests: SUCCESS 
+[tests] [2025-09-09T10:09:01.727Z] [INFO] Test execution completed. Overall success: true 
+[security-scan] [2025-09-09T10:09:01.728Z] [INFO] Starting security scans for languages: nodejs
+[security-scan] [2025-09-09T10:09:01.729Z] [INFO] Running basic security checks 
+[security-scan] [2025-09-09T10:09:01.729Z] [INFO] Basic security check: PASSED 
+[security-scan] [2025-09-09T10:09:01.730Z] [INFO] Running nodejs security scan 
+[security-scan] [2025-09-09T10:09:05.038Z] [INFO] nodejs security scan: PASSED 
+[security-scan] [2025-09-09T10:09:05.038Z] [INFO] Security scans completed. Overall success: true 
+[build] [2025-09-09T10:09:05.039Z] [INFO] Starting build verification for languages: nodejs
+[build] [2025-09-09T10:09:05.039Z] [INFO] Building nodejs project 
+[build] [2025-09-09T10:09:05.040Z] [INFO] nodejs build: SUCCESS 
+[build] [2025-09-09T10:09:05.040Z] [INFO] nodejs build: SKIPPED (no build configuration found) 
+[build] [2025-09-09T10:09:05.041Z] [INFO] Build verification completed. Overall success: true 
+[summary] [2025-09-09T10:09:05.042Z] [INFO] PIPELINE EXECUTION SUMMARY 
+[summary] [2025-09-09T10:09:05.042Z] [INFO] ================================================== 
+[summary] [2025-09-09T10:09:05.042Z] [INFO] Execution started: 2025-09-09T10:08:54.943Z 
+[summary] [2025-09-09T10:09:05.042Z] [INFO] Execution completed: 2025-09-09T10:09:05.042Z 
+[summary] [2025-09-09T10:09:05.043Z] [INFO] Total duration: 10.10 seconds 
+[summary] [2025-09-09T10:09:05.043Z] [INFO]  
+[summary] [2025-09-09T10:09:05.043Z] [INFO] STAGE RESULTS: 
+[summary] [2025-09-09T10:09:05.044Z] [INFO] Language Detection   ✅ PASS 
+[summary] [2025-09-09T10:09:05.055Z] [INFO]   Languages detected: nodejs 
+[summary] [2025-09-09T10:09:05.056Z] [INFO]   Primary language: nodejs 
+[summary] [2025-09-09T10:09:05.056Z] [INFO] Dependency Check     ✅ PASS 
+[summary] [2025-09-09T10:09:05.056Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:09:05.057Z] [INFO] Code Quality         ✅ PASS 
+[summary] [2025-09-09T10:09:05.057Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:09:05.058Z] [INFO] Tests                ✅ PASS 
+[summary] [2025-09-09T10:09:05.058Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:09:05.059Z] [INFO] Security Scan        ✅ PASS 
+[summary] [2025-09-09T10:09:05.059Z] [INFO]   basic: SUCCESS 
+[summary] [2025-09-09T10:09:05.059Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:09:05.059Z] [INFO] Build                ✅ PASS 
+[summary] [2025-09-09T10:09:05.060Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:09:05.060Z] [INFO]  
+[summary] [2025-09-09T10:09:05.061Z] [INFO] 🎉 PIPELINE SUCCESS: All checks passed! Code is ready for deployment. 
+[summary] [2025-09-09T10:09:05.061Z] [INFO]  
+[summary] [2025-09-09T10:09:05.062Z] [INFO] FINAL STATUS: SUCCESS 
+[summary] [2025-09-09T10:09:05.062Z] [INFO] Log files location: C:\Users\hsjagad\CascadeProjects\windsurf-cicd\local-pipeline\logs\run-2025-09-09T10-08-54-943Z 
+[language-detection] [2025-09-09T10:09:21.724Z] [INFO] Starting language detection process 
+[language-detection] [2025-09-09T10:09:21.725Z] [INFO] Detected Node.js via package.json 
+[language-detection] [2025-09-09T10:09:21.726Z] [INFO] Final results: 1 languages detected 
+[language-detection] [2025-09-09T10:09:21.726Z] [INFO] Languages: nodejs 
+[language-detection] [2025-09-09T10:09:21.726Z] [INFO] Primary language: nodejs 
+[language-detection] [2025-09-09T10:09:21.726Z] [INFO] Detection files: package.json 
+[dependency-check] [2025-09-09T10:09:21.727Z] [INFO] Starting dependency check for languages: nodejs
+[dependency-check] [2025-09-09T10:09:21.728Z] [INFO] Checking nodejs dependencies 
+[dependency-check] [2025-09-09T10:09:28.606Z] [INFO] nodejs dependency check: SUCCESS 
+[dependency-check] [2025-09-09T10:09:28.607Z] [INFO] Dependency check completed. Overall success: true 
+[code-quality] [2025-09-09T10:09:28.608Z] [INFO] Starting code quality checks for languages: nodejs
+[code-quality] [2025-09-09T10:09:28.608Z] [INFO] Running nodejs code quality checks 
+[code-quality] [2025-09-09T10:09:28.610Z] [INFO] nodejs code quality: SUCCESS 
+[code-quality] [2025-09-09T10:09:28.610Z] [INFO] Code quality checks completed. Overall success: true 
+[tests] [2025-09-09T10:09:28.611Z] [INFO] Starting test execution for languages: nodejs
+[tests] [2025-09-09T10:09:28.611Z] [INFO] Running nodejs tests 
+[tests] [2025-09-09T10:09:28.612Z] [INFO] nodejs tests: SUCCESS 
+[tests] [2025-09-09T10:09:28.613Z] [INFO] Test execution completed. Overall success: true 
+[security-scan] [2025-09-09T10:09:28.613Z] [INFO] Starting security scans for languages: nodejs
+[security-scan] [2025-09-09T10:09:28.614Z] [INFO] Running basic security checks 
+[security-scan] [2025-09-09T10:09:28.615Z] [INFO] Basic security check: PASSED 
+[security-scan] [2025-09-09T10:09:28.615Z] [INFO] Running nodejs security scan 
+[security-scan] [2025-09-09T10:09:31.950Z] [INFO] nodejs security scan: PASSED 
+[security-scan] [2025-09-09T10:09:31.950Z] [INFO] Security scans completed. Overall success: true 
+[build] [2025-09-09T10:09:31.951Z] [INFO] Starting build verification for languages: nodejs
+[build] [2025-09-09T10:09:31.952Z] [INFO] Building nodejs project 
+[build] [2025-09-09T10:09:31.953Z] [INFO] nodejs build: SUCCESS 
+[build] [2025-09-09T10:09:31.954Z] [INFO] nodejs build: SKIPPED (no build configuration found) 
+[build] [2025-09-09T10:09:31.954Z] [INFO] Build verification completed. Overall success: true 
+[summary] [2025-09-09T10:09:31.955Z] [INFO] PIPELINE EXECUTION SUMMARY 
+[summary] [2025-09-09T10:09:31.955Z] [INFO] ================================================== 
+[summary] [2025-09-09T10:09:31.956Z] [INFO] Execution started: 2025-09-09T10:09:21.693Z 
+[summary] [2025-09-09T10:09:31.956Z] [INFO] Execution completed: 2025-09-09T10:09:31.956Z 
+[summary] [2025-09-09T10:09:31.956Z] [INFO] Total duration: 10.26 seconds 
+[summary] [2025-09-09T10:09:31.957Z] [INFO]  
+[summary] [2025-09-09T10:09:31.957Z] [INFO] STAGE RESULTS: 
+[summary] [2025-09-09T10:09:31.958Z] [INFO] Language Detection   ✅ PASS 
+[summary] [2025-09-09T10:09:31.972Z] [INFO]   Languages detected: nodejs 
+[summary] [2025-09-09T10:09:31.972Z] [INFO]   Primary language: nodejs 
+[summary] [2025-09-09T10:09:31.973Z] [INFO] Dependency Check     ✅ PASS 
+[summary] [2025-09-09T10:09:31.973Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:09:31.974Z] [INFO] Code Quality         ✅ PASS 
+[summary] [2025-09-09T10:09:31.974Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:09:31.975Z] [INFO] Tests                ✅ PASS 
+[summary] [2025-09-09T10:09:31.975Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:09:31.975Z] [INFO] Security Scan        ✅ PASS 
+[summary] [2025-09-09T10:09:31.976Z] [INFO]   basic: SUCCESS 
+[summary] [2025-09-09T10:09:31.976Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:09:31.976Z] [INFO] Build                ✅ PASS 
+[summary] [2025-09-09T10:09:31.977Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:09:31.978Z] [INFO]  
+[summary] [2025-09-09T10:09:31.978Z] [INFO] 🎉 PIPELINE SUCCESS: All checks passed! Code is ready for deployment. 
+[summary] [2025-09-09T10:09:31.978Z] [INFO]  
+[summary] [2025-09-09T10:09:31.978Z] [INFO] FINAL STATUS: SUCCESS 
+[summary] [2025-09-09T10:09:31.979Z] [INFO] Log files location: C:\Users\hsjagad\CascadeProjects\windsurf-cicd\local-pipeline\logs\run-2025-09-09T10-09-21-694Z 
+[language-detection] [2025-09-09T10:09:49.035Z] [INFO] Starting language detection process 
+[language-detection] [2025-09-09T10:09:49.035Z] [INFO] Detected Node.js via package.json 
+[language-detection] [2025-09-09T10:09:49.037Z] [INFO] Final results: 1 languages detected 
+[language-detection] [2025-09-09T10:09:49.037Z] [INFO] Languages: nodejs 
+[language-detection] [2025-09-09T10:09:49.038Z] [INFO] Primary language: nodejs 
+[language-detection] [2025-09-09T10:09:49.038Z] [INFO] Detection files: package.json 
+[dependency-check] [2025-09-09T10:09:49.039Z] [INFO] Starting dependency check for languages: nodejs
+[dependency-check] [2025-09-09T10:09:49.040Z] [INFO] Checking nodejs dependencies 
+[dependency-check] [2025-09-09T10:09:55.782Z] [INFO] nodejs dependency check: SUCCESS 
+[dependency-check] [2025-09-09T10:09:55.782Z] [INFO] Dependency check completed. Overall success: true 
+[code-quality] [2025-09-09T10:09:55.783Z] [INFO] Starting code quality checks for languages: nodejs
+[code-quality] [2025-09-09T10:09:55.784Z] [INFO] Running nodejs code quality checks 
+[code-quality] [2025-09-09T10:09:55.786Z] [INFO] nodejs code quality: SUCCESS 
+[code-quality] [2025-09-09T10:09:55.786Z] [INFO] Code quality checks completed. Overall success: true 
+[tests] [2025-09-09T10:09:55.787Z] [INFO] Starting test execution for languages: nodejs
+[tests] [2025-09-09T10:09:55.787Z] [INFO] Running nodejs tests 
+[tests] [2025-09-09T10:09:55.788Z] [INFO] nodejs tests: SUCCESS 
+[tests] [2025-09-09T10:09:55.789Z] [INFO] Test execution completed. Overall success: true 
+[security-scan] [2025-09-09T10:09:55.790Z] [INFO] Starting security scans for languages: nodejs
+[security-scan] [2025-09-09T10:09:55.790Z] [INFO] Running basic security checks 
+[security-scan] [2025-09-09T10:09:55.791Z] [INFO] Basic security check: PASSED 
+[security-scan] [2025-09-09T10:09:55.792Z] [INFO] Running nodejs security scan 
+[security-scan] [2025-09-09T10:09:59.130Z] [INFO] nodejs security scan: PASSED 
+[security-scan] [2025-09-09T10:09:59.130Z] [INFO] Security scans completed. Overall success: true 
+[build] [2025-09-09T10:09:59.131Z] [INFO] Starting build verification for languages: nodejs
+[build] [2025-09-09T10:09:59.132Z] [INFO] Building nodejs project 
+[build] [2025-09-09T10:09:59.133Z] [INFO] nodejs build: SUCCESS 
+[build] [2025-09-09T10:09:59.133Z] [INFO] nodejs build: SKIPPED (no build configuration found) 
+[build] [2025-09-09T10:09:59.133Z] [INFO] Build verification completed. Overall success: true 
+[summary] [2025-09-09T10:09:59.134Z] [INFO] PIPELINE EXECUTION SUMMARY 
+[summary] [2025-09-09T10:09:59.135Z] [INFO] ================================================== 
+[summary] [2025-09-09T10:09:59.135Z] [INFO] Execution started: 2025-09-09T10:09:49.017Z 
+[summary] [2025-09-09T10:09:59.135Z] [INFO] Execution completed: 2025-09-09T10:09:59.135Z 
+[summary] [2025-09-09T10:09:59.136Z] [INFO] Total duration: 10.12 seconds 
+[summary] [2025-09-09T10:09:59.136Z] [INFO]  
+[summary] [2025-09-09T10:09:59.136Z] [INFO] STAGE RESULTS: 
+[summary] [2025-09-09T10:09:59.137Z] [INFO] Language Detection   ✅ PASS 
+[summary] [2025-09-09T10:09:59.150Z] [INFO]   Languages detected: nodejs 
+[summary] [2025-09-09T10:09:59.150Z] [INFO]   Primary language: nodejs 
+[summary] [2025-09-09T10:09:59.151Z] [INFO] Dependency Check     ✅ PASS 
+[summary] [2025-09-09T10:09:59.151Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:09:59.152Z] [INFO] Code Quality         ✅ PASS 
+[summary] [2025-09-09T10:09:59.152Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:09:59.153Z] [INFO] Tests                ✅ PASS 
+[summary] [2025-09-09T10:09:59.153Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:09:59.154Z] [INFO] Security Scan        ✅ PASS 
+[summary] [2025-09-09T10:09:59.154Z] [INFO]   basic: SUCCESS 
+[summary] [2025-09-09T10:09:59.154Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:09:59.155Z] [INFO] Build                ✅ PASS 
+[summary] [2025-09-09T10:09:59.155Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:09:59.156Z] [INFO]  
+[summary] [2025-09-09T10:09:59.156Z] [INFO] 🎉 PIPELINE SUCCESS: All checks passed! Code is ready for deployment. 
+[summary] [2025-09-09T10:09:59.157Z] [INFO]  
+[summary] [2025-09-09T10:09:59.157Z] [INFO] FINAL STATUS: SUCCESS 
+[summary] [2025-09-09T10:09:59.157Z] [INFO] Log files location: C:\Users\hsjagad\CascadeProjects\windsurf-cicd\local-pipeline\logs\run-2025-09-09T10-09-49-017Z 
+[language-detection] [2025-09-09T10:13:02.569Z] [INFO] Starting language detection process 
+[language-detection] [2025-09-09T10:13:02.570Z] [INFO] Detected Node.js via package.json 
+[language-detection] [2025-09-09T10:13:02.571Z] [INFO] Final results: 1 languages detected 
+[language-detection] [2025-09-09T10:13:02.571Z] [INFO] Languages: nodejs 
+[language-detection] [2025-09-09T10:13:02.571Z] [INFO] Primary language: nodejs 
+[language-detection] [2025-09-09T10:13:02.572Z] [INFO] Detection files: package.json 
+[dependency-check] [2025-09-09T10:13:02.573Z] [INFO] Starting dependency check for languages: nodejs
+[dependency-check] [2025-09-09T10:13:02.573Z] [INFO] Checking nodejs dependencies 
+[dependency-check] [2025-09-09T10:13:09.467Z] [INFO] nodejs dependency check: SUCCESS 
+[dependency-check] [2025-09-09T10:13:09.467Z] [INFO] Dependency check completed. Overall success: true 
+[code-quality] [2025-09-09T10:13:09.468Z] [INFO] Starting code quality checks for languages: nodejs
+[code-quality] [2025-09-09T10:13:09.469Z] [INFO] Running nodejs code quality checks 
+[code-quality] [2025-09-09T10:13:09.471Z] [INFO] nodejs code quality: SUCCESS 
+[code-quality] [2025-09-09T10:13:09.471Z] [INFO] Code quality checks completed. Overall success: true 
+[tests] [2025-09-09T10:13:09.472Z] [INFO] Starting test execution for languages: nodejs
+[tests] [2025-09-09T10:13:09.472Z] [INFO] Running nodejs tests 
+[tests] [2025-09-09T10:13:09.473Z] [INFO] nodejs tests: SUCCESS 
+[tests] [2025-09-09T10:13:09.474Z] [INFO] Test execution completed. Overall success: true 
+[security-scan] [2025-09-09T10:13:09.475Z] [INFO] Starting security scans for languages: nodejs
+[security-scan] [2025-09-09T10:13:09.475Z] [INFO] Running basic security checks 
+[security-scan] [2025-09-09T10:13:09.475Z] [INFO] Basic security check: PASSED 
+[security-scan] [2025-09-09T10:13:09.476Z] [INFO] Running nodejs security scan 
+[security-scan] [2025-09-09T10:13:13.144Z] [INFO] nodejs security scan: PASSED 
+[security-scan] [2025-09-09T10:13:13.145Z] [INFO] Security scans completed. Overall success: true 
+[build] [2025-09-09T10:13:13.146Z] [INFO] Starting build verification for languages: nodejs
+[build] [2025-09-09T10:13:13.146Z] [INFO] Building nodejs project 
+[build] [2025-09-09T10:13:13.147Z] [INFO] nodejs build: SUCCESS 
+[build] [2025-09-09T10:13:13.147Z] [INFO] nodejs build: SKIPPED (no build configuration found) 
+[build] [2025-09-09T10:13:13.148Z] [INFO] Build verification completed. Overall success: true 
+[summary] [2025-09-09T10:13:13.149Z] [INFO] PIPELINE EXECUTION SUMMARY 
+[summary] [2025-09-09T10:13:13.149Z] [INFO] ================================================== 
+[summary] [2025-09-09T10:13:13.150Z] [INFO] Execution started: 2025-09-09T10:13:02.552Z 
+[summary] [2025-09-09T10:13:13.150Z] [INFO] Execution completed: 2025-09-09T10:13:13.150Z 
+[summary] [2025-09-09T10:13:13.150Z] [INFO] Total duration: 10.60 seconds 
+[summary] [2025-09-09T10:13:13.151Z] [INFO]  
+[summary] [2025-09-09T10:13:13.151Z] [INFO] STAGE RESULTS: 
+[summary] [2025-09-09T10:13:13.153Z] [INFO] Language Detection   ✅ PASS 
+[summary] [2025-09-09T10:13:13.167Z] [INFO]   Languages detected: nodejs 
+[summary] [2025-09-09T10:13:13.167Z] [INFO]   Primary language: nodejs 
+[summary] [2025-09-09T10:13:13.168Z] [INFO] Dependency Check     ✅ PASS 
+[summary] [2025-09-09T10:13:13.169Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:13:13.169Z] [INFO] Code Quality         ✅ PASS 
+[summary] [2025-09-09T10:13:13.170Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:13:13.170Z] [INFO] Tests                ✅ PASS 
+[summary] [2025-09-09T10:13:13.171Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:13:13.171Z] [INFO] Security Scan        ✅ PASS 
+[summary] [2025-09-09T10:13:13.171Z] [INFO]   basic: SUCCESS 
+[summary] [2025-09-09T10:13:13.172Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:13:13.172Z] [INFO] Build                ✅ PASS 
+[summary] [2025-09-09T10:13:13.173Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:13:13.173Z] [INFO]  
+[summary] [2025-09-09T10:13:13.174Z] [INFO] 🎉 PIPELINE SUCCESS: All checks passed! Code is ready for deployment. 
+[summary] [2025-09-09T10:13:13.174Z] [INFO]  
+[summary] [2025-09-09T10:13:13.174Z] [INFO] FINAL STATUS: SUCCESS 
+[summary] [2025-09-09T10:13:13.175Z] [INFO] Log files location: C:\Users\hsjagad\CascadeProjects\windsurf-cicd\local-pipeline\logs\run-2025-09-09T10-13-02-552Z 
+[language-detection] [2025-09-09T10:23:01.419Z] [INFO] Starting language detection process 
+[language-detection] [2025-09-09T10:23:01.420Z] [INFO] Detected Node.js via package.json 
+[language-detection] [2025-09-09T10:23:01.421Z] [INFO] Final results: 1 languages detected 
+[language-detection] [2025-09-09T10:23:01.421Z] [INFO] Languages: nodejs 
+[language-detection] [2025-09-09T10:23:01.421Z] [INFO] Primary language: nodejs 
+[language-detection] [2025-09-09T10:23:01.422Z] [INFO] Detection files: package.json 
+[dependency-check] [2025-09-09T10:23:01.423Z] [INFO] Starting dependency check for languages: nodejs
+[dependency-check] [2025-09-09T10:23:01.423Z] [INFO] Checking nodejs dependencies 
+[dependency-check] [2025-09-09T10:23:08.362Z] [INFO] nodejs dependency check: SUCCESS 
+[dependency-check] [2025-09-09T10:23:08.362Z] [INFO] Dependency check completed. Overall success: true 
+[code-quality] [2025-09-09T10:23:08.364Z] [INFO] Starting code quality checks for languages: nodejs
+[code-quality] [2025-09-09T10:23:08.365Z] [INFO] Running nodejs code quality checks 
+[code-quality] [2025-09-09T10:23:08.366Z] [INFO] nodejs code quality: SUCCESS 
+[code-quality] [2025-09-09T10:23:08.366Z] [INFO] Code quality checks completed. Overall success: true 
+[tests] [2025-09-09T10:23:08.367Z] [INFO] Starting test execution for languages: nodejs
+[tests] [2025-09-09T10:23:08.368Z] [INFO] Running nodejs tests 
+[tests] [2025-09-09T10:23:08.369Z] [INFO] nodejs tests: SUCCESS 
+[tests] [2025-09-09T10:23:08.369Z] [INFO] Test execution completed. Overall success: true 
+[security-scan] [2025-09-09T10:23:08.370Z] [INFO] Starting security scans for languages: nodejs
+[security-scan] [2025-09-09T10:23:08.370Z] [INFO] Running basic security checks 
+[security-scan] [2025-09-09T10:23:08.371Z] [INFO] Basic security check: PASSED 
+[security-scan] [2025-09-09T10:23:08.371Z] [INFO] Running nodejs security scan 
+[security-scan] [2025-09-09T10:23:11.759Z] [INFO] nodejs security scan: PASSED 
+[security-scan] [2025-09-09T10:23:11.760Z] [INFO] Security scans completed. Overall success: true 
+[build] [2025-09-09T10:23:11.761Z] [INFO] Starting build verification for languages: nodejs
+[build] [2025-09-09T10:23:11.761Z] [INFO] Building nodejs project 
+[build] [2025-09-09T10:23:11.763Z] [INFO] nodejs build: SUCCESS 
+[build] [2025-09-09T10:23:11.763Z] [INFO] nodejs build: SKIPPED (no build configuration found) 
+[build] [2025-09-09T10:23:11.763Z] [INFO] Build verification completed. Overall success: true 
+[summary] [2025-09-09T10:23:11.765Z] [INFO] PIPELINE EXECUTION SUMMARY 
+[summary] [2025-09-09T10:23:11.765Z] [INFO] ================================================== 
+[summary] [2025-09-09T10:23:11.766Z] [INFO] Execution started: 2025-09-09T10:23:01.391Z 
+[summary] [2025-09-09T10:23:11.766Z] [INFO] Execution completed: 2025-09-09T10:23:11.766Z 
+[summary] [2025-09-09T10:23:11.766Z] [INFO] Total duration: 10.37 seconds 
+[summary] [2025-09-09T10:23:11.766Z] [INFO]  
+[summary] [2025-09-09T10:23:11.767Z] [INFO] STAGE RESULTS: 
+[summary] [2025-09-09T10:23:11.767Z] [INFO] Language Detection   ✅ PASS 
+[summary] [2025-09-09T10:23:11.780Z] [INFO]   Languages detected: nodejs 
+[summary] [2025-09-09T10:23:11.780Z] [INFO]   Primary language: nodejs 
+[summary] [2025-09-09T10:23:11.780Z] [INFO] Dependency Check     ✅ PASS 
+[summary] [2025-09-09T10:23:11.781Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:23:11.782Z] [INFO] Code Quality         ✅ PASS 
+[summary] [2025-09-09T10:23:11.782Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:23:11.783Z] [INFO] Tests                ✅ PASS 
+[summary] [2025-09-09T10:23:11.783Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:23:11.784Z] [INFO] Security Scan        ✅ PASS 
+[summary] [2025-09-09T10:23:11.784Z] [INFO]   basic: SUCCESS 
+[summary] [2025-09-09T10:23:11.785Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:23:11.785Z] [INFO] Build                ✅ PASS 
+[summary] [2025-09-09T10:23:11.785Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:23:11.786Z] [INFO]  
+[summary] [2025-09-09T10:23:11.786Z] [INFO] 🎉 PIPELINE SUCCESS: All checks passed! Code is ready for deployment. 
+[summary] [2025-09-09T10:23:11.787Z] [INFO]  
+[summary] [2025-09-09T10:23:11.787Z] [INFO] FINAL STATUS: SUCCESS 
+[summary] [2025-09-09T10:23:11.787Z] [INFO] Log files location: C:\Users\hsjagad\CascadeProjects\windsurf-cicd\local-pipeline\logs\run-2025-09-09T10-23-01-392Z 
+[language-detection] [2025-09-09T10:23:57.546Z] [INFO] Starting language detection process 
+[language-detection] [2025-09-09T10:23:57.546Z] [INFO] Detected Node.js via package.json 
+[language-detection] [2025-09-09T10:23:57.548Z] [INFO] Final results: 1 languages detected 
+[language-detection] [2025-09-09T10:23:57.548Z] [INFO] Languages: nodejs 
+[language-detection] [2025-09-09T10:23:57.548Z] [INFO] Primary language: nodejs 
+[language-detection] [2025-09-09T10:23:57.548Z] [INFO] Detection files: package.json 
+[dependency-check] [2025-09-09T10:23:57.549Z] [INFO] Starting dependency check for languages: nodejs
+[dependency-check] [2025-09-09T10:23:57.550Z] [INFO] Checking nodejs dependencies 
+[dependency-check] [2025-09-09T10:24:03.936Z] [INFO] nodejs dependency check: SUCCESS 
+[dependency-check] [2025-09-09T10:24:03.937Z] [INFO] Dependency check completed. Overall success: true 
+[code-quality] [2025-09-09T10:24:03.938Z] [INFO] Starting code quality checks for languages: nodejs
+[code-quality] [2025-09-09T10:24:03.939Z] [INFO] Running nodejs code quality checks 
+[code-quality] [2025-09-09T10:24:03.940Z] [INFO] nodejs code quality: SUCCESS 
+[code-quality] [2025-09-09T10:24:03.941Z] [INFO] Code quality checks completed. Overall success: true 
+[tests] [2025-09-09T10:24:03.941Z] [INFO] Starting test execution for languages: nodejs
+[tests] [2025-09-09T10:24:03.942Z] [INFO] Running nodejs tests 
+[tests] [2025-09-09T10:24:03.943Z] [INFO] nodejs tests: SUCCESS 
+[tests] [2025-09-09T10:24:03.943Z] [INFO] Test execution completed. Overall success: true 
+[security-scan] [2025-09-09T10:24:03.944Z] [INFO] Starting security scans for languages: nodejs
+[security-scan] [2025-09-09T10:24:03.944Z] [INFO] Running basic security checks 
+[security-scan] [2025-09-09T10:24:03.945Z] [INFO] Basic security check: PASSED 
+[security-scan] [2025-09-09T10:24:03.945Z] [INFO] Running nodejs security scan 
+[security-scan] [2025-09-09T10:24:07.112Z] [INFO] nodejs security scan: PASSED 
+[security-scan] [2025-09-09T10:24:07.113Z] [INFO] Security scans completed. Overall success: true 
+[build] [2025-09-09T10:24:07.114Z] [INFO] Starting build verification for languages: nodejs
+[build] [2025-09-09T10:24:07.114Z] [INFO] Building nodejs project 
+[build] [2025-09-09T10:24:07.116Z] [INFO] nodejs build: SUCCESS 
+[build] [2025-09-09T10:24:07.116Z] [INFO] nodejs build: SKIPPED (no build configuration found) 
+[build] [2025-09-09T10:24:07.116Z] [INFO] Build verification completed. Overall success: true 
+[summary] [2025-09-09T10:24:07.118Z] [INFO] PIPELINE EXECUTION SUMMARY 
+[summary] [2025-09-09T10:24:07.118Z] [INFO] ================================================== 
+[summary] [2025-09-09T10:24:07.118Z] [INFO] Execution started: 2025-09-09T10:23:57.519Z 
+[summary] [2025-09-09T10:24:07.119Z] [INFO] Execution completed: 2025-09-09T10:24:07.119Z 
+[summary] [2025-09-09T10:24:07.119Z] [INFO] Total duration: 9.60 seconds 
+[summary] [2025-09-09T10:24:07.119Z] [INFO]  
+[summary] [2025-09-09T10:24:07.120Z] [INFO] STAGE RESULTS: 
+[summary] [2025-09-09T10:24:07.120Z] [INFO] Language Detection   ✅ PASS 
+[summary] [2025-09-09T10:24:07.136Z] [INFO]   Languages detected: nodejs 
+[summary] [2025-09-09T10:24:07.136Z] [INFO]   Primary language: nodejs 
+[summary] [2025-09-09T10:24:07.137Z] [INFO] Dependency Check     ✅ PASS 
+[summary] [2025-09-09T10:24:07.137Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:24:07.138Z] [INFO] Code Quality         ✅ PASS 
+[summary] [2025-09-09T10:24:07.138Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:24:07.139Z] [INFO] Tests                ✅ PASS 
+[summary] [2025-09-09T10:24:07.139Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:24:07.140Z] [INFO] Security Scan        ✅ PASS 
+[summary] [2025-09-09T10:24:07.140Z] [INFO]   basic: SUCCESS 
+[summary] [2025-09-09T10:24:07.141Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:24:07.141Z] [INFO] Build                ✅ PASS 
+[summary] [2025-09-09T10:24:07.141Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-09T10:24:07.143Z] [INFO]  
+[summary] [2025-09-09T10:24:07.143Z] [INFO] 🎉 PIPELINE SUCCESS: All checks passed! Code is ready for deployment. 
+[summary] [2025-09-09T10:24:07.144Z] [INFO]  
+[summary] [2025-09-09T10:24:07.144Z] [INFO] FINAL STATUS: SUCCESS 
+[summary] [2025-09-09T10:24:07.144Z] [INFO] Log files location: C:\Users\hsjagad\CascadeProjects\windsurf-cicd\local-pipeline\logs\run-2025-09-09T10-23-57-520Z 

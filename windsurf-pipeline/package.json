@@ -1,0 +1,16 @@
+{
+  "name": "windsurf-cicd-project",
+  "version": "1.0.0",
+  "description": "Windsurf CI/CD project with automated local pipeline",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node local-pipeline/startup.js"
+  },
+  "keywords": [
+    "cicd",
+    "windsurf",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT"
+}

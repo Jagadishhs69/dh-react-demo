@@ -1,0 +1,226 @@
+{
+  "status": "failed",
+  "message": "Pipeline failed after 16.27s",
+  "timestamp": "2025-09-23T04:28:29.828Z",
+  "details": {
+    "duration": "16.27",
+    "results": {
+      "languageDetection": {
+        "success": true,
+        "languages": [
+          "nodejs"
+        ],
+        "primaryLanguage": "nodejs",
+        "detectedFiles": [
+          "package.json"
+        ]
+      },
+      "dependencyCheck": {
+        "success": true,
+        "results": {
+          "nodejs": {
+            "success": true,
+            "hasNodeModules": true,
+            "audit": {
+              "success": false,
+              "error": "Command failed: npm audit --audit-level=moderate --dry-run\n",
+              "code": 1,
+              "stdout": "# npm audit report\n\nnth-check  <2.0.1\nSeverity: high\nInefficient Regular Expression Complexity in nth-check - https://github.com/advisories/GHSA-rp65-9cf3-cjxr\nfix available via `npm audit fix --force`\nWill install react-scripts@0.0.0, which is a breaking change\nnode_modules/svgo/node_modules/nth-check\n  css-select  <=3.1.0\n  Depends on vulnerable versions of nth-check\n  node_modules/svgo/node_modules/css-select\n    svgo  1.0.0 - 1.3.2\n    Depends on vulnerable versions of css-select\n    node_modules/svgo\n      @svgr/plugin-svgo  <=5.5.0\n      Depends on vulnerable versions of svgo\n      node_modules/@svgr/plugin-svgo\n        @svgr/webpack  4.0.0 - 5.5.0\n        Depends on vulnerable versions of @svgr/plugin-svgo\n        node_modules/@svgr/webpack\n          react-scripts  >=0.1.0\n          Depends on vulnerable versions of @svgr/webpack\n          Depends on vulnerable versions of resolve-url-loader\n          Depends on vulnerable versions of webpack-dev-server\n          node_modules/react-scripts\n\npostcss  <8.4.31\nSeverity: moderate\nPostCSS line return parsing error - https://github.com/advisories/GHSA-7fh5-64p2-3v2j\nfix available via `npm audit fix --force`\nWill install react-scripts@0.0.0, which is a breaking change\nnode_modules/resolve-url-loader/node_modules/postcss\n  resolve-url-loader  0.0.1-experiment-postcss || 3.0.0-alpha.1 - 4.0.0\n  Depends on vulnerable versions of postcss\n  node_modules/resolve-url-loader\n\nwebpack-dev-server  <=5.2.0\nSeverity: moderate\nwebpack-dev-server users' source code may be stolen when they access a malicious web site with non-Chromium based browser - https://github.com/advisories/GHSA-9jgg-88mc-972h\nwebpack-dev-server users' source code may be stolen when they access a malicious web site - https://github.com/advisories/GHSA-4v9v-hfq4-rm2v\nfix available via `npm audit fix --force`\nWill install react-scripts@0.0.0, which is a breaking change\nnode_modules/webpack-dev-server\n\n9 vulnerabilities (3 moderate, 6 high)\n\nTo address all issues (including breaking changes), run:\n  npm audit fix --force\n",
+              "stderr": ""
+            },
+            "vulnerabilities": true,
+            "skipped": true,
+            "message": "Dependency check skipped to prevent hanging"
+          }
+        }
+      },
+      "codeQuality": {
+        "success": false,
+        "results": {
+          "nodejs": {
+            "success": false,
+            "results": {
+              "eslint": {
+                "success": false,
+                "error": "Command failed: npx eslint . --ext .js,.jsx,.ts,.tsx --no-error-on-unmatched-pattern\n\nOops! Something went wrong! :(\n\nESLint: 9.36.0\n\nESLint couldn't find an eslint.config.(js|mjs|cjs) file.\n\nFrom ESLint v9.0.0, the default configuration file is now eslint.config.js.\nIf you are using a .eslintrc.* file, please follow the migration guide\nto update your configuration file to the new format:\n\nhttps://eslint.org/docs/latest/use/configure/migration-guide\n\nIf you still have problems after following the migration guide, please stop by\nhttps://eslint.org/chat/help to chat with the team.\n\n",
+                "code": 2,
+                "stdout": "",
+                "stderr": "\nOops! Something went wrong! :(\n\nESLint: 9.36.0\n\nESLint couldn't find an eslint.config.(js|mjs|cjs) file.\n\nFrom ESLint v9.0.0, the default configuration file is now eslint.config.js.\nIf you are using a .eslintrc.* file, please follow the migration guide\nto update your configuration file to the new format:\n\nhttps://eslint.org/docs/latest/use/configure/migration-guide\n\nIf you still have problems after following the migration guide, please stop by\nhttps://eslint.org/chat/help to chat with the team.\n\n"
+              },
+              "prettier": {
+                "success": false,
+                "error": "Command failed: npx prettier --check . --ignore-unknown\n[\u001b[33mwarn\u001b[39m] .eslintrc.js\n[\u001b[33mwarn\u001b[39m] .prettierrc.json\n[\u001b[33mwarn\u001b[39m] .vscode/pipeline-status.json\n[\u001b[33mwarn\u001b[39m] .vscode/settings.json\n[\u001b[33mwarn\u001b[39m] ESLINT_NO_CONSOLE_SETUP.md\n[\u001b[33mwarn\u001b[39m] PIPELINE_STATUS.md\n[\u001b[33mwarn\u001b[39m] public/index.html\n[\u001b[33mwarn\u001b[39m] README.md\n[\u001b[31merror\u001b[39m] src/App.js: SyntaxError: Unexpected character '\u0000'. (41:1)\n[\u001b[31merror\u001b[39m] \u001b[0m \u001b[90m 39 |\u001b[39m\n[\u001b[31merror\u001b[39m]  \u001b[90m 40 |\u001b[39m \u001b[90m// Embedded pipeline test comment/\u0000/\u0000 \u0000T\u0000e\u0000s\u0000t\u0000i\u0000n\u0000g\u0000 \u0000p\u0000r\u0000e\u0000-\u0000c\u0000o\u0000m\u0000m\u0000i\u0000t\u0000 \u0000h\u0000o\u0000o\u0000k\u0000 \u0000i\u0000n\u0000t\u0000e\u0000g\u0000r\u0000a\u0000t\u0000i\u0000o\u0000n\u0000\u001b[39m\n[\u001b[31merror\u001b[39m] \u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m \u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m\n[\u001b[31merror\u001b[39m]  \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n[\u001b[31merror\u001b[39m]  \u001b[90m 42 |\u001b[39m \u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m\u001b[35m/\u0000/\u001b[39m\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m \u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m\u001b[33mT\u001b[39m\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39me\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39ms\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mt\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mi\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mn\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mg\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m \u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mp\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mr\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39me\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m\u001b[33m-\u001b[39m\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mc\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mo\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mm\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mm\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mi\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mt\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m \u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mh\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mo\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mo\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mk\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m \u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mi\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mn\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mt\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39me\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mg\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mr\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39ma\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mt\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mi\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mo\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mn\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m\n[\u001b[31merror\u001b[39m]  \u001b[90m 43 |\u001b[39m \u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m\n[\u001b[31merror\u001b[39m]  \u001b[90m 44 |\u001b[39m \u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m\u001b[0m\n[\u001b[33mwarn\u001b[39m] src/components/Dashboard.js\n[\u001b[33mwarn\u001b[39m] src/components/TestConsole.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/DEVELOPER_SETUP.md\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/eslint.config.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/local-pipeline/auto-start-service.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/local-pipeline/cleanup-locks.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/local-pipeline/code-review-assistant.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/local-pipeline/code-review-generator.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/local-pipeline/file-watcher.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/local-pipeline/notifications.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/local-pipeline/run-pipeline.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/local-pipeline/simple-coverage.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/local-pipeline/startup.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/local-pipeline/status-indicator.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/README.md\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/reports/code-review-2025-09-19-18-47.md\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/reports/code-review-2025-09-19-19-26.md\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/reports/code-review-2025-09-22-17-35.md\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/reports/latest-code-review.md\n",
+                "code": 2,
+                "stdout": "Checking formatting...\nError occurred when checking code style in the above file.\n",
+                "stderr": "[\u001b[33mwarn\u001b[39m] .eslintrc.js\n[\u001b[33mwarn\u001b[39m] .prettierrc.json\n[\u001b[33mwarn\u001b[39m] .vscode/pipeline-status.json\n[\u001b[33mwarn\u001b[39m] .vscode/settings.json\n[\u001b[33mwarn\u001b[39m] ESLINT_NO_CONSOLE_SETUP.md\n[\u001b[33mwarn\u001b[39m] PIPELINE_STATUS.md\n[\u001b[33mwarn\u001b[39m] public/index.html\n[\u001b[33mwarn\u001b[39m] README.md\n[\u001b[31merror\u001b[39m] src/App.js: SyntaxError: Unexpected character '\u0000'. (41:1)\n[\u001b[31merror\u001b[39m] \u001b[0m \u001b[90m 39 |\u001b[39m\n[\u001b[31merror\u001b[39m]  \u001b[90m 40 |\u001b[39m \u001b[90m// Embedded pipeline test comment/\u0000/\u0000 \u0000T\u0000e\u0000s\u0000t\u0000i\u0000n\u0000g\u0000 \u0000p\u0000r\u0000e\u0000-\u0000c\u0000o\u0000m\u0000m\u0000i\u0000t\u0000 \u0000h\u0000o\u0000o\u0000k\u0000 \u0000i\u0000n\u0000t\u0000e\u0000g\u0000r\u0000a\u0000t\u0000i\u0000o\u0000n\u0000\u001b[39m\n[\u001b[31merror\u001b[39m] \u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m \u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m\n[\u001b[31merror\u001b[39m]  \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n[\u001b[31merror\u001b[39m]  \u001b[90m 42 |\u001b[39m \u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m\u001b[35m/\u0000/\u001b[39m\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m \u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m\u001b[33mT\u001b[39m\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39me\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39ms\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mt\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mi\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mn\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mg\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m \u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mp\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mr\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39me\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m\u001b[33m-\u001b[39m\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mc\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mo\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mm\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mm\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mi\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mt\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m \u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mh\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mo\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mo\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mk\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m \u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mi\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mn\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mt\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39me\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mg\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mr\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39ma\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mt\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mi\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mo\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39mn\u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m\n[\u001b[31merror\u001b[39m]  \u001b[90m 43 |\u001b[39m \u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m\n[\u001b[31merror\u001b[39m]  \u001b[90m 44 |\u001b[39m \u001b[37m\u001b[41m\u001b[1m\u0000\u001b[22m\u001b[49m\u001b[39m\u001b[0m\n[\u001b[33mwarn\u001b[39m] src/components/Dashboard.js\n[\u001b[33mwarn\u001b[39m] src/components/TestConsole.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/DEVELOPER_SETUP.md\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/eslint.config.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/local-pipeline/auto-start-service.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/local-pipeline/cleanup-locks.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/local-pipeline/code-review-assistant.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/local-pipeline/code-review-generator.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/local-pipeline/file-watcher.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/local-pipeline/notifications.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/local-pipeline/run-pipeline.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/local-pipeline/simple-coverage.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/local-pipeline/startup.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/local-pipeline/status-indicator.js\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/README.md\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/reports/code-review-2025-09-19-18-47.md\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/reports/code-review-2025-09-19-19-26.md\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/reports/code-review-2025-09-22-17-35.md\n[\u001b[33mwarn\u001b[39m] windsurf-pipeline/reports/latest-code-review.md\n"
+              },
+              "syntax": {
+                "success": false,
+                "fileCount": 16,
+                "syntaxErrors": 4,
+                "errors": [
+                  "src\\App.js: Cannot use import statement outside a module",
+                  "src\\components\\Dashboard.js: Cannot use import statement outside a module",
+                  "src\\components\\TestConsole.js: Cannot use import statement outside a module",
+                  "src\\index.js: Cannot use import statement outside a module"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "npmVersionScan": {
+        "success": false,
+        "results": {
+          "nodejs": {
+            "success": false,
+            "outdatedPackages": [
+              {
+                "name": "@emotion/react",
+                "wanted": "11.14.0",
+                "latest": "11.14.0"
+              },
+              {
+                "name": "@emotion/styled",
+                "wanted": "11.14.1",
+                "latest": "11.14.1"
+              },
+              {
+                "name": "@mui/icons-material",
+                "wanted": "5.18.0",
+                "latest": "7.3.2"
+              },
+              {
+                "name": "@mui/material",
+                "wanted": "5.18.0",
+                "latest": "7.3.2"
+              },
+              {
+                "name": "react",
+                "wanted": "18.3.1",
+                "latest": "19.1.1"
+              },
+              {
+                "name": "react-dom",
+                "wanted": "18.3.1",
+                "latest": "19.1.1"
+              },
+              {
+                "name": "react-scripts",
+                "wanted": "5.0.1",
+                "latest": "5.0.1"
+              }
+            ],
+            "vulnerablePackages": [
+              "@svgr/plugin-svgo",
+              "@svgr/webpack",
+              "css-select",
+              "nth-check",
+              "postcss",
+              "react-scripts",
+              "resolve-url-loader",
+              "svgo",
+              "webpack-dev-server"
+            ],
+            "outdatedCount": 7,
+            "vulnerableCount": 9
+          }
+        }
+      },
+      "secretDetection": {
+        "success": true,
+        "results": {
+          "secretScan": {
+            "success": true,
+            "secrets": [],
+            "sensitiveFiles": [],
+            "filesScanned": 23,
+            "secretCount": 0,
+            "sensitiveFileCount": 0
+          }
+        }
+      },
+      "sastScan": {
+        "success": true,
+        "results": {
+          "coverage": {
+            "success": true,
+            "coverage": {
+              "totalFiles": 4,
+              "filesByType": {
+                ".js": {
+                  "count": 4,
+                  "totalLines": 344,
+                  "codeLines": 315,
+                  "commentLines": 4,
+                  "emptyLines": 25
+                }
+              },
+              "detailedAnalysis": [
+                {
+                  "file": "src\\App.js",
+                  "totalLines": 42,
+                  "codeLines": 37,
+                  "commentLines": 1,
+                  "emptyLines": 4,
+                  "complexity": 1
+                },
+                {
+                  "file": "src\\components\\Dashboard.js",
+                  "totalLines": 259,
+                  "codeLines": 245,
+                  "commentLines": 0,
+                  "emptyLines": 14,
+                  "complexity": 1
+                },
+                {
+                  "file": "src\\components\\TestConsole.js",
+                  "totalLines": 32,
+                  "codeLines": 24,
+                  "commentLines": 3,
+                  "emptyLines": 5,
+                  "complexity": 1
+                },
+                {
+                  "file": "src\\index.js",
+                  "totalLines": 11,
+                  "codeLines": 9,
+                  "commentLines": 0,
+                  "emptyLines": 2,
+                  "complexity": 1
+                }
+              ]
+            },
+            "summary": {
+              "totalFiles": 4,
+              "totalLines": 344,
+              "totalCodeLines": 315,
+              "averageComplexity": 1,
+              "codeToTotalRatio": 92,
+              "fileTypes": 1,
+              "largestFile": {
+                "file": "src\\components\\Dashboard.js",
+                "totalLines": 259,
+                "codeLines": 245,
+                "commentLines": 0,
+                "emptyLines": 14,
+                "complexity": 1
+              },
+              "mostComplexFile": {
+                "file": "src\\App.js",
+                "totalLines": 42,
+                "codeLines": 37,
+                "commentLines": 1,
+                "emptyLines": 4,
+                "complexity": 1
+              }
+            }
+          }
+        }
+      },
+      "overall": "failed"
+    }
+  },
+  "icon": "error",
+  "color": "#FF0000"
+}
