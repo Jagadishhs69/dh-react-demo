@@ -38,7 +38,7 @@
             "eslint": {
               "success": true,
               "stdout": "",
-              "stderr": "(node:31692) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/hsjagad/CascadeProjects/windsurf-cicd-pipeline-pre-commit/React_demo-master/eslint.config.js?mtime=1758882354885 is not specified and it doesn't parse as CommonJS.\nReparsing as ES module because module syntax was detected. This incurs a performance overhead.\nTo eliminate this warning, add \"type\": \"module\" to C:\\Users\\hsjagad\\CascadeProjects\\windsurf-cicd-pipeline-pre-commit\\React_demo-master\\package.json.\n(Use `node --trace-warnings ...` to show where the warning was created)"
+              "stderr": "(node:26632) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/hsjagad/CascadeProjects/windsurf-cicd-pipeline-pre-commit/React_demo-master/eslint.config.js?mtime=1758882354885 is not specified and it doesn't parse as CommonJS.\nReparsing as ES module because module syntax was detected. This incurs a performance overhead.\nTo eliminate this warning, add \"type\": \"module\" to C:\\Users\\hsjagad\\CascadeProjects\\windsurf-cicd-pipeline-pre-commit\\React_demo-master\\package.json.\n(Use `node --trace-warnings ...` to show where the warning was created)"
             },
             "prettier": {
               "success": true,
@@ -339,18 +339,18 @@
             "filesByType": {
               ".js": {
                 "count": 4,
-                "totalLines": 365,
+                "totalLines": 366,
                 "codeLines": 334,
-                "commentLines": 5,
+                "commentLines": 6,
                 "emptyLines": 26
               }
             },
             "detailedAnalysis": [
               {
                 "file": "src\\App.js",
-                "totalLines": 42,
+                "totalLines": 43,
                 "codeLines": 35,
-                "commentLines": 2,
+                "commentLines": 3,
                 "emptyLines": 5,
                 "complexity": 1
               },
@@ -382,10 +382,10 @@
           },
           "summary": {
             "totalFiles": 4,
-            "totalLines": 365,
+            "totalLines": 366,
             "totalCodeLines": 334,
             "averageComplexity": 1,
-            "codeToTotalRatio": 92,
+            "codeToTotalRatio": 91,
             "fileTypes": 1,
             "largestFile": {
               "file": "src\\components\\Dashboard.js",
@@ -397,9 +397,9 @@
             },
             "mostComplexFile": {
               "file": "src\\App.js",
-              "totalLines": 42,
+              "totalLines": 43,
               "codeLines": 35,
-              "commentLines": 2,
+              "commentLines": 3,
               "emptyLines": 5,
               "complexity": 1
             }
@@ -409,7 +409,7 @@
     },
     "overall": "failed"
   },
-  "timestamp": "2025-09-26T10:53:59.641Z",
-  "runDir": "C:\\Users\\hsjagad\\CascadeProjects\\windsurf-cicd-pipeline-pre-commit\\React_demo-master\\windsurf-pipeline\\logs\\run-2025-09-26T10-53-37-370Z",
-  "reportPath": "C:\\Users\\hsjagad\\CascadeProjects\\windsurf-cicd-pipeline-pre-commit\\React_demo-master\\windsurf-pipeline\\reports\\code-review-2025-09-26-16-23.md"
+  "timestamp": "2025-09-26T11:29:31.506Z",
+  "runDir": "C:\\Users\\hsjagad\\CascadeProjects\\windsurf-cicd-pipeline-pre-commit\\React_demo-master\\windsurf-pipeline\\logs\\run-2025-09-26T11-29-11-612Z",
+  "reportPath": "C:\\Users\\hsjagad\\CascadeProjects\\windsurf-cicd-pipeline-pre-commit\\React_demo-master\\windsurf-pipeline\\reports\\code-review-2025-09-26-16-59.md"
 }

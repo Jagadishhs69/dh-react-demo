@@ -8266,3 +8266,142 @@ You're using eslint.config.js, some command line flags are no longer available. 
 [summary] [2025-09-26T10:53:56.609Z] [INFO]  
 [summary] [2025-09-26T10:53:56.609Z] [INFO] FINAL STATUS: FAILED 
 [summary] [2025-09-26T10:53:56.610Z] [INFO] Log files location: C:\Users\hsjagad\CascadeProjects\windsurf-cicd-pipeline-pre-commit\React_demo-master\windsurf-pipeline\logs\run-2025-09-26T10-53-37-370Z 
+[language-detection] [2025-09-26T11:24:58.760Z] [INFO] Starting language detection process 
+[language-detection] [2025-09-26T11:24:58.761Z] [INFO] Detected Node.js via package.json in root 
+[language-detection] [2025-09-26T11:24:58.763Z] [INFO] Final results: 1 languages detected 
+[language-detection] [2025-09-26T11:24:58.764Z] [INFO] Languages: nodejs 
+[language-detection] [2025-09-26T11:24:58.764Z] [INFO] Primary language: nodejs 
+[language-detection] [2025-09-26T11:24:58.764Z] [INFO] Detection files: package.json 
+[dependency-check] [2025-09-26T11:24:58.767Z] [INFO] Starting dependency check for languages: nodejs
+[dependency-check] [2025-09-26T11:24:58.769Z] [INFO] Checking nodejs dependencies 
+[dependency-check] [2025-09-26T11:25:03.572Z] [INFO] nodejs dependency check: SUCCESS 
+[dependency-check] [2025-09-26T11:25:03.572Z] [INFO] Dependency check completed. Overall success: true 
+[code-quality] [2025-09-26T11:25:03.575Z] [INFO] Starting code quality checks for languages: nodejs
+[code-quality] [2025-09-26T11:25:03.576Z] [INFO] Running nodejs code quality checks 
+[code-quality] [2025-09-26T11:25:14.841Z] [INFO] nodejs code quality: SUCCESS 
+[code-quality] [2025-09-26T11:25:14.841Z] [INFO] Code quality checks completed. Overall success: true 
+[npm-version-scan] [2025-09-26T11:25:14.844Z] [INFO] Starting npm version vulnerability scan 
+[npm-version-scan] [2025-09-26T11:25:25.386Z] [ERROR] npm version scan: FAILED 
+[npm-version-scan] [2025-09-26T11:25:25.387Z] [ERROR] === NPM VERSION SCAN FAILURE DETAILS === 
+[npm-version-scan] [2025-09-26T11:25:25.387Z] [WARN] Outdated package: @mui/icons-material (current: 5.18.0, wanted: 5.18.0, latest: 7.3.2) 
+[npm-version-scan] [2025-09-26T11:25:25.388Z] [WARN] Outdated package: @mui/material (current: 5.18.0, wanted: 5.18.0, latest: 7.3.2) 
+[npm-version-scan] [2025-09-26T11:25:25.389Z] [WARN] Outdated package: husky (current: 8.0.3, wanted: 8.0.3, latest: 9.1.7) 
+[npm-version-scan] [2025-09-26T11:25:25.401Z] [WARN] Outdated package: lint-staged (current: 15.5.2, wanted: 15.5.2, latest: 16.2.1) 
+[npm-version-scan] [2025-09-26T11:25:25.402Z] [WARN] Outdated package: react (current: 18.3.1, wanted: 18.3.1, latest: 19.1.1) 
+[npm-version-scan] [2025-09-26T11:25:25.402Z] [WARN] Outdated package: react-dom (current: 18.3.1, wanted: 18.3.1, latest: 19.1.1) 
+[npm-version-scan] [2025-09-26T11:25:25.403Z] [ERROR] 9 vulnerable packages detected 
+[npm-version-scan] [2025-09-26T11:25:25.404Z] [ERROR] Run 'npm audit fix' to resolve vulnerabilities 
+[npm-version-scan] [2025-09-26T11:25:25.404Z] [INFO] npm version scan completed. Overall success: false 
+[secret-detection] [2025-09-26T11:25:25.412Z] [INFO] Starting secret detection scan 
+[secret-detection] [2025-09-26T11:25:25.513Z] [INFO] Secret detection: NO SECRETS FOUND 
+[secret-detection] [2025-09-26T11:25:25.514Z] [INFO] Secret detection completed. Overall success: true 
+[sast-scan] [2025-09-26T11:25:25.524Z] [INFO] Starting code coverage analysis for languages: nodejs
+[sast-scan] [2025-09-26T11:25:25.540Z] [INFO] Code coverage analysis: SUCCESS 
+[sast-scan] [2025-09-26T11:25:25.540Z] [INFO] === CODE COVERAGE RESULTS === 
+[sast-scan] [2025-09-26T11:25:25.541Z] [INFO] Total files analyzed: 4 
+[sast-scan] [2025-09-26T11:25:25.542Z] [INFO] Total lines of code: 334 
+[sast-scan] [2025-09-26T11:25:25.542Z] [INFO] Average complexity: 1 
+[sast-scan] [2025-09-26T11:25:25.543Z] [INFO] Code to total ratio: 92% 
+[sast-scan] [2025-09-26T11:25:25.543Z] [INFO] Code coverage analysis completed. Overall success: true 
+[summary] [2025-09-26T11:25:25.556Z] [INFO] PIPELINE EXECUTION SUMMARY 
+[summary] [2025-09-26T11:25:25.557Z] [INFO] ================================================== 
+[summary] [2025-09-26T11:25:25.557Z] [INFO] Execution started: 2025-09-26T11:24:58.669Z 
+[summary] [2025-09-26T11:25:25.558Z] [INFO] Execution completed: 2025-09-26T11:25:25.558Z 
+[summary] [2025-09-26T11:25:25.558Z] [INFO] Total duration: 26.88 seconds 
+[summary] [2025-09-26T11:25:25.559Z] [INFO]  
+[summary] [2025-09-26T11:25:25.559Z] [INFO] STAGE RESULTS: 
+[summary] [2025-09-26T11:25:25.565Z] [INFO] Language Detection   ✅ PASS 
+[summary] [2025-09-26T11:25:25.569Z] [INFO]   Languages detected: nodejs 
+[summary] [2025-09-26T11:25:25.570Z] [INFO]   Primary language: nodejs 
+[summary] [2025-09-26T11:25:25.572Z] [INFO] Dependency Check     ✅ PASS 
+[summary] [2025-09-26T11:25:25.573Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-26T11:25:25.574Z] [INFO] Code Quality         ✅ PASS 
+[summary] [2025-09-26T11:25:25.575Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-26T11:25:25.585Z] [INFO] NPM Version Scan     ❌ FAIL 
+[summary] [2025-09-26T11:25:25.586Z] [INFO]   nodejs: FAILED 
+[summary] [2025-09-26T11:25:25.587Z] [INFO] Secret Detection     ✅ PASS 
+[summary] [2025-09-26T11:25:25.588Z] [INFO]   secretScan: SUCCESS 
+[summary] [2025-09-26T11:25:25.590Z] [INFO] SAST Scan            ✅ PASS 
+[summary] [2025-09-26T11:25:25.591Z] [INFO]   coverage: SUCCESS 
+[summary] [2025-09-26T11:25:25.593Z] [ERROR]  
+[summary] [2025-09-26T11:25:25.594Z] [ERROR] ❌ PIPELINE FAILED: Please review the issues above. 
+[summary] [2025-09-26T11:25:25.594Z] [INFO]  
+[summary] [2025-09-26T11:25:25.595Z] [INFO] FINAL STATUS: FAILED 
+[summary] [2025-09-26T11:25:25.596Z] [INFO] Log files location: C:\Users\hsjagad\CascadeProjects\windsurf-cicd-pipeline-pre-commit\React_demo-master\windsurf-pipeline\logs\run-2025-09-26T11-24-58-670Z 
+[language-detection] [2025-09-26T11:29:11.655Z] [INFO] Starting language detection process 
+[language-detection] [2025-09-26T11:29:11.656Z] [INFO] Detected Node.js via package.json in root 
+[language-detection] [2025-09-26T11:29:11.658Z] [INFO] Final results: 1 languages detected 
+[language-detection] [2025-09-26T11:29:11.658Z] [INFO] Languages: nodejs 
+[language-detection] [2025-09-26T11:29:11.658Z] [INFO] Primary language: nodejs 
+[language-detection] [2025-09-26T11:29:11.659Z] [INFO] Detection files: package.json 
+[dependency-check] [2025-09-26T11:29:11.661Z] [INFO] Starting dependency check for languages: nodejs
+[dependency-check] [2025-09-26T11:29:11.661Z] [INFO] Checking nodejs dependencies 
+[dependency-check] [2025-09-26T11:29:14.489Z] [INFO] nodejs dependency check: SUCCESS 
+[dependency-check] [2025-09-26T11:29:14.490Z] [INFO] Dependency check completed. Overall success: true 
+[code-quality] [2025-09-26T11:29:14.492Z] [INFO] Starting code quality checks for languages: nodejs
+[code-quality] [2025-09-26T11:29:14.493Z] [INFO] Running nodejs code quality checks 
+[code-quality] [2025-09-26T11:29:22.254Z] [INFO] nodejs code quality: SUCCESS 
+[code-quality] [2025-09-26T11:29:22.254Z] [INFO] Code quality checks completed. Overall success: true 
+[npm-version-scan] [2025-09-26T11:29:22.256Z] [INFO] Starting npm version vulnerability scan 
+[npm-version-scan] [2025-09-26T11:29:28.408Z] [ERROR] npm version scan: FAILED 
+[npm-version-scan] [2025-09-26T11:29:28.408Z] [ERROR] === NPM VERSION SCAN FAILURE DETAILS === 
+[npm-version-scan] [2025-09-26T11:29:28.409Z] [WARN] Outdated package: @mui/icons-material (current: 5.18.0, wanted: 5.18.0, latest: 7.3.2) 
+[npm-version-scan] [2025-09-26T11:29:28.409Z] [WARN] Outdated package: @mui/material (current: 5.18.0, wanted: 5.18.0, latest: 7.3.2) 
+[npm-version-scan] [2025-09-26T11:29:28.410Z] [WARN] Outdated package: husky (current: 8.0.3, wanted: 8.0.3, latest: 9.1.7) 
+[npm-version-scan] [2025-09-26T11:29:28.410Z] [WARN] Outdated package: lint-staged (current: 15.5.2, wanted: 15.5.2, latest: 16.2.1) 
+[npm-version-scan] [2025-09-26T11:29:28.411Z] [WARN] Outdated package: react (current: 18.3.1, wanted: 18.3.1, latest: 19.1.1) 
+[npm-version-scan] [2025-09-26T11:29:28.411Z] [WARN] Outdated package: react-dom (current: 18.3.1, wanted: 18.3.1, latest: 19.1.1) 
+[npm-version-scan] [2025-09-26T11:29:28.411Z] [ERROR] 9 vulnerable packages detected 
+[npm-version-scan] [2025-09-26T11:29:28.411Z] [ERROR] Run 'npm audit fix' to resolve vulnerabilities 
+[npm-version-scan] [2025-09-26T11:29:28.412Z] [INFO] npm version scan completed. Overall success: false 
+[secret-detection] [2025-09-26T11:29:28.414Z] [INFO] Starting secret detection scan 
+[secret-detection] [2025-09-26T11:29:28.437Z] [INFO] Secret detection: NO SECRETS FOUND 
+[secret-detection] [2025-09-26T11:29:28.438Z] [INFO] Secret detection completed. Overall success: true 
+[sast-scan] [2025-09-26T11:29:28.439Z] [INFO] Starting code coverage analysis for languages: nodejs
+[sast-scan] [2025-09-26T11:29:28.447Z] [INFO] Code coverage analysis: SUCCESS 
+[sast-scan] [2025-09-26T11:29:28.447Z] [INFO] === CODE COVERAGE RESULTS === 
+[sast-scan] [2025-09-26T11:29:28.447Z] [INFO] Total files analyzed: 4 
+[sast-scan] [2025-09-26T11:29:28.448Z] [INFO] Total lines of code: 334 
+[sast-scan] [2025-09-26T11:29:28.448Z] [INFO] Average complexity: 1 
+[sast-scan] [2025-09-26T11:29:28.449Z] [INFO] Code to total ratio: 91% 
+[sast-scan] [2025-09-26T11:29:28.449Z] [INFO] Code coverage analysis completed. Overall success: true 
+[summary] [2025-09-26T11:29:28.452Z] [INFO] PIPELINE EXECUTION SUMMARY 
+[summary] [2025-09-26T11:29:28.453Z] [INFO] ================================================== 
+[summary] [2025-09-26T11:29:28.453Z] [INFO] Execution started: 2025-09-26T11:29:11.612Z 
+[summary] [2025-09-26T11:29:28.453Z] [INFO] Execution completed: 2025-09-26T11:29:28.453Z 
+[summary] [2025-09-26T11:29:28.453Z] [INFO] Total duration: 16.84 seconds 
+[summary] [2025-09-26T11:29:28.454Z] [INFO]  
+[summary] [2025-09-26T11:29:28.454Z] [INFO] STAGE RESULTS: 
+[summary] [2025-09-26T11:29:28.455Z] [INFO] Language Detection   ✅ PASS 
+[summary] [2025-09-26T11:29:28.455Z] [INFO]   Languages detected: nodejs 
+[summary] [2025-09-26T11:29:28.456Z] [INFO]   Primary language: nodejs 
+[summary] [2025-09-26T11:29:28.456Z] [INFO] Dependency Check     ✅ PASS 
+[summary] [2025-09-26T11:29:28.456Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-26T11:29:28.457Z] [INFO] Code Quality         ✅ PASS 
+[summary] [2025-09-26T11:29:28.458Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-26T11:29:28.458Z] [INFO] NPM Version Scan     ❌ FAIL 
+[summary] [2025-09-26T11:29:28.459Z] [INFO]   nodejs: FAILED 
+[summary] [2025-09-26T11:29:28.459Z] [INFO] Secret Detection     ✅ PASS 
+[summary] [2025-09-26T11:29:28.460Z] [INFO]   secretScan: SUCCESS 
+[summary] [2025-09-26T11:29:28.460Z] [INFO] SAST Scan            ✅ PASS 
+[summary] [2025-09-26T11:29:28.461Z] [INFO]   coverage: SUCCESS 
+[summary] [2025-09-26T11:29:28.462Z] [ERROR]  
+[summary] [2025-09-26T11:29:28.462Z] [ERROR] ❌ PIPELINE FAILED: Please review the issues above. 
+[summary] [2025-09-26T11:29:28.463Z] [INFO]  
+[summary] [2025-09-26T11:29:28.463Z] [INFO] FINAL STATUS: FAILED 
+[summary] [2025-09-26T11:29:28.464Z] [INFO] Log files location: C:\Users\hsjagad\CascadeProjects\windsurf-cicd-pipeline-pre-commit\React_demo-master\windsurf-pipeline\logs\run-2025-09-26T11-29-11-612Z 
+[language-detection] [2025-09-26T11:30:49.275Z] [INFO] Starting language detection process 
+[language-detection] [2025-09-26T11:30:49.275Z] [INFO] Detected Node.js via package.json in root 
+[language-detection] [2025-09-26T11:30:49.277Z] [INFO] Final results: 1 languages detected 
+[language-detection] [2025-09-26T11:30:49.278Z] [INFO] Languages: nodejs 
+[language-detection] [2025-09-26T11:30:49.278Z] [INFO] Primary language: nodejs 
+[language-detection] [2025-09-26T11:30:49.278Z] [INFO] Detection files: package.json 
+[dependency-check] [2025-09-26T11:30:49.281Z] [INFO] Starting dependency check for languages: nodejs
+[dependency-check] [2025-09-26T11:30:49.282Z] [INFO] Checking nodejs dependencies 
+[dependency-check] [2025-09-26T11:30:53.297Z] [INFO] nodejs dependency check: SUCCESS 
+[dependency-check] [2025-09-26T11:30:53.298Z] [INFO] Dependency check completed. Overall success: true 
+[code-quality] [2025-09-26T11:30:53.299Z] [INFO] Starting code quality checks for languages: nodejs
+[code-quality] [2025-09-26T11:30:53.300Z] [INFO] Running nodejs code quality checks 
+[code-quality] [2025-09-26T11:31:01.511Z] [INFO] nodejs code quality: SUCCESS 
+[code-quality] [2025-09-26T11:31:01.511Z] [INFO] Code quality checks completed. Overall success: true 
+[npm-version-scan] [2025-09-26T11:31:01.514Z] [INFO] Starting npm version vulnerability scan 

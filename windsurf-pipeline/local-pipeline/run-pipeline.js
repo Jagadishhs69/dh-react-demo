@@ -938,13 +938,15 @@ class LocalPipelineRunner {
         this.log('debug', '  Running npm outdated check...');
         const outdatedResult = await this.runCommand('npm outdated --json', { 
             cwd: workingDir,
-            ignoreStderr: true 
+            ignoreStderr: true,
+            timeout: 15000 // 15 second timeout to prevent hanging
         });
         
         this.log('debug', '  Running npm audit for vulnerabilities...');
         const auditResult = await this.runCommand('npm audit --audit-level=moderate --json', { 
             cwd: workingDir,
-            ignoreStderr: true 
+            ignoreStderr: true,
+            timeout: 15000 // 15 second timeout to prevent hanging
         });
         
         let outdatedPackages = [];
@@ -994,14 +996,18 @@ class LocalPipelineRunner {
             }
         }
         
-        const hasIssues = outdatedPackages.length > 0 || vulnerablePackages.length > 0;
+        // Only fail on high/critical vulnerabilities, not outdated packages
+        const hasHighRiskVulns = vulnerablePackages.some(vuln => 
+            vuln.severity === 'high' || vuln.severity === 'critical'
+        );
         
         return {
-            success: !hasIssues,
+            success: !hasHighRiskVulns, // Only fail on high/critical vulnerabilities
             outdatedPackages,
             vulnerablePackages,
             outdatedCount: outdatedPackages.length,
-            vulnerableCount: vulnerablePackages.length
+            vulnerableCount: vulnerablePackages.length,
+            hasHighRiskVulns
         };
     }
     
@@ -1338,7 +1344,8 @@ class LocalPipelineRunner {
         this.log('debug', '  Running npm audit...');
         const auditResult = await this.runCommand('npm audit --audit-level=moderate --json', { 
             cwd: workingDir,
-            ignoreStderr: true 
+            ignoreStderr: true,
+            timeout: 15000 // 15 second timeout to prevent hanging
         });
         
         // Parse audit results

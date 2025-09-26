@@ -20,7 +20,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Windsurf Pipeline (temporarily enabled to check latest results)
+# Windsurf Pipeline (temporarily enabled to fix hanging issue)
 # windsurf-pipeline/
 .pipeline-status
 PIPELINE_STATUS.md

@@ -1,8 +1,0 @@
-# DEPENDENCY CHECK LOG
-Started at: 2025-09-26T09:49:41.137Z
-==================================================
-
-[2025-09-26T09:49:41.208Z] [INFO] Starting dependency check for languages: nodejs
-[2025-09-26T09:49:41.209Z] [INFO] Checking nodejs dependencies 
-[2025-09-26T09:49:45.335Z] [INFO] nodejs dependency check: SUCCESS 
-[2025-09-26T09:49:45.336Z] [INFO] Dependency check completed. Overall success: true 
