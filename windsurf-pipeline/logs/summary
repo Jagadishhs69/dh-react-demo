@@ -1,1 +1,1 @@
-2025-09-26T11:57:01.532Z | 2025-09-26T11-55-55-436Z | language-detection:SUCCESS, dependency-check:SUCCESS, code-quality:SUCCESS, npm-version-scan:FAILED, secret-detection:SUCCESS, sast-scan:SUCCESS
+2025-09-26T12:43:56.191Z | 2025-09-26T12-37-18-420Z | language-detection:SUCCESS, dependency-check:SUCCESS, code-quality:FAILED, npm-version-scan:FAILED, secret-detection:SUCCESS, sast-scan:SUCCESS

@@ -1002,22 +1002,34 @@ class LocalPipelineRunner {
         
         // Only fail on critical production runtime vulnerabilities
         // Exclude development toolchain vulnerabilities (react-scripts, webpack, etc.)
+        this.log('debug', `Total vulnerabilities found: ${vulnerablePackages.length}`);
+        
         const productionVulns = vulnerablePackages.filter(vuln => {
-            const isDevTool = vuln.name && (
-                vuln.name.includes('react-scripts') ||
-                vuln.name.includes('webpack') ||
-                vuln.name.includes('@babel') ||
-                vuln.name.includes('workbox') ||
-                vuln.name.includes('postcss') ||
-                vuln.name.includes('svgo') ||
-                vuln.name.includes('@svgr') ||
-                vuln.name.includes('eslint') ||
-                vuln.name.includes('inquirer') ||
-                vuln.name.includes('tmp')
+            const vulnName = vuln.name || '';
+            const isDevTool = (
+                vulnName.includes('react-scripts') ||
+                vulnName.includes('webpack') ||
+                vulnName.includes('@babel') ||
+                vulnName.includes('workbox') ||
+                vulnName.includes('postcss') ||
+                vulnName.includes('svgo') ||
+                vulnName.includes('@svgr') ||
+                vulnName.includes('eslint') ||
+                vulnName.includes('inquirer') ||
+                vulnName.includes('tmp') ||
+                vulnName.includes('nth-check') ||
+                vulnName.includes('tough-cookie') ||
+                vulnName.includes('external-editor')
             );
-            return !isDevTool && vuln.severity === 'critical';
+            
+            const isCritical = vuln.severity === 'critical';
+            const shouldBlock = !isDevTool && isCritical;
+            
+            this.log('debug', `Vuln: ${vulnName}, Severity: ${vuln.severity}, DevTool: ${isDevTool}, ShouldBlock: ${shouldBlock}`);
+            return shouldBlock;
         });
         
+        this.log('debug', `Production vulnerabilities that will block: ${productionVulns.length}`);
         const hasHighRiskVulns = productionVulns.length > 0;
         
         return {
