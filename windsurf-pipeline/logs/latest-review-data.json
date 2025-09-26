@@ -38,7 +38,7 @@
             "eslint": {
               "success": true,
               "stdout": "",
-              "stderr": "(node:27436) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/hsjagad/CascadeProjects/windsurf-cicd-pipeline-pre-commit/React_demo-master/eslint.config.js?mtime=1758882354885 is not specified and it doesn't parse as CommonJS.\nReparsing as ES module because module syntax was detected. This incurs a performance overhead.\nTo eliminate this warning, add \"type\": \"module\" to C:\\Users\\hsjagad\\CascadeProjects\\windsurf-cicd-pipeline-pre-commit\\React_demo-master\\package.json.\n(Use `node --trace-warnings ...` to show where the warning was created)"
+              "stderr": "(node:17760) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/hsjagad/CascadeProjects/windsurf-cicd-pipeline-pre-commit/React_demo-master/eslint.config.js?mtime=1758882354885 is not specified and it doesn't parse as CommonJS.\nReparsing as ES module because module syntax was detected. This incurs a performance overhead.\nTo eliminate this warning, add \"type\": \"module\" to C:\\Users\\hsjagad\\CascadeProjects\\windsurf-cicd-pipeline-pre-commit\\React_demo-master\\package.json.\n(Use `node --trace-warnings ...` to show where the warning was created)"
             },
             "prettier": {
               "success": true,
@@ -55,15 +55,265 @@
       }
     },
     "npmVersionScan": {
-      "success": true,
+      "success": false,
       "results": {
         "nodejs": {
-          "success": true,
-          "outdatedPackages": [],
-          "vulnerablePackages": [],
-          "outdatedCount": 0,
-          "vulnerableCount": 0,
-          "hasHighRiskVulns": false
+          "success": false,
+          "outdatedPackages": [
+            {
+              "name": "@mui/icons-material",
+              "current": "5.18.0",
+              "wanted": "5.18.0",
+              "latest": "7.3.2"
+            },
+            {
+              "name": "@mui/material",
+              "current": "5.18.0",
+              "wanted": "5.18.0",
+              "latest": "7.3.2"
+            },
+            {
+              "name": "husky",
+              "current": "8.0.3",
+              "wanted": "8.0.3",
+              "latest": "9.1.7"
+            },
+            {
+              "name": "lint-staged",
+              "current": "15.5.2",
+              "wanted": "15.5.2",
+              "latest": "16.2.1"
+            },
+            {
+              "name": "react",
+              "current": "18.3.1",
+              "wanted": "18.3.1",
+              "latest": "19.1.1"
+            },
+            {
+              "name": "react-dom",
+              "current": "18.3.1",
+              "wanted": "18.3.1",
+              "latest": "19.1.1"
+            }
+          ],
+          "vulnerablePackages": [
+            {
+              "name": "@svgr/plugin-svgo",
+              "severity": "high",
+              "title": "Unknown vulnerability",
+              "description": "No description available",
+              "url": "",
+              "cwe": [],
+              "cvss": null,
+              "range": "<=5.5.0",
+              "fixAvailable": {
+                "name": "react-scripts",
+                "version": "0.0.0",
+                "isSemVerMajor": true
+              },
+              "isDirect": false,
+              "effects": [
+                "@svgr/webpack"
+              ],
+              "nodes": [
+                "node_modules/@svgr/plugin-svgo"
+              ]
+            },
+            {
+              "name": "@svgr/webpack",
+              "severity": "high",
+              "title": "Unknown vulnerability",
+              "description": "No description available",
+              "url": "",
+              "cwe": [],
+              "cvss": null,
+              "range": "4.0.0 - 5.5.0",
+              "fixAvailable": {
+                "name": "react-scripts",
+                "version": "0.0.0",
+                "isSemVerMajor": true
+              },
+              "isDirect": false,
+              "effects": [
+                "react-scripts"
+              ],
+              "nodes": [
+                "node_modules/@svgr/webpack"
+              ]
+            },
+            {
+              "name": "css-select",
+              "severity": "high",
+              "title": "Unknown vulnerability",
+              "description": "No description available",
+              "url": "",
+              "cwe": [],
+              "cvss": null,
+              "range": "<=3.1.0",
+              "fixAvailable": {
+                "name": "react-scripts",
+                "version": "0.0.0",
+                "isSemVerMajor": true
+              },
+              "isDirect": false,
+              "effects": [
+                "svgo"
+              ],
+              "nodes": [
+                "node_modules/svgo/node_modules/css-select"
+              ]
+            },
+            {
+              "name": "nth-check",
+              "severity": "high",
+              "title": "Inefficient Regular Expression Complexity in nth-check",
+              "description": "No description available",
+              "url": "https://github.com/advisories/GHSA-rp65-9cf3-cjxr",
+              "cwe": [
+                "CWE-1333"
+              ],
+              "cvss": {
+                "score": 7.5,
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+              },
+              "range": "<2.0.1",
+              "fixAvailable": {
+                "name": "react-scripts",
+                "version": "0.0.0",
+                "isSemVerMajor": true
+              },
+              "isDirect": false,
+              "effects": [
+                "css-select"
+              ],
+              "nodes": [
+                "node_modules/svgo/node_modules/nth-check"
+              ]
+            },
+            {
+              "name": "postcss",
+              "severity": "moderate",
+              "title": "PostCSS line return parsing error",
+              "description": "No description available",
+              "url": "https://github.com/advisories/GHSA-7fh5-64p2-3v2j",
+              "cwe": [
+                "CWE-74",
+                "CWE-144"
+              ],
+              "cvss": {
+                "score": 5.3,
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+              },
+              "range": "<8.4.31",
+              "fixAvailable": {
+                "name": "react-scripts",
+                "version": "0.0.0",
+                "isSemVerMajor": true
+              },
+              "isDirect": false,
+              "effects": [
+                "resolve-url-loader"
+              ],
+              "nodes": [
+                "node_modules/resolve-url-loader/node_modules/postcss"
+              ]
+            },
+            {
+              "name": "react-scripts",
+              "severity": "high",
+              "title": "Unknown vulnerability",
+              "description": "No description available",
+              "url": "",
+              "cwe": [],
+              "cvss": null,
+              "range": ">=0.1.0",
+              "fixAvailable": {
+                "name": "react-scripts",
+                "version": "0.0.0",
+                "isSemVerMajor": true
+              },
+              "isDirect": true,
+              "effects": [],
+              "nodes": [
+                "node_modules/react-scripts"
+              ]
+            },
+            {
+              "name": "resolve-url-loader",
+              "severity": "moderate",
+              "title": "Unknown vulnerability",
+              "description": "No description available",
+              "url": "",
+              "cwe": [],
+              "cvss": null,
+              "range": "0.0.1-experiment-postcss || 3.0.0-alpha.1 - 4.0.0",
+              "fixAvailable": {
+                "name": "react-scripts",
+                "version": "0.0.0",
+                "isSemVerMajor": true
+              },
+              "isDirect": false,
+              "effects": [
+                "react-scripts"
+              ],
+              "nodes": [
+                "node_modules/resolve-url-loader"
+              ]
+            },
+            {
+              "name": "svgo",
+              "severity": "high",
+              "title": "Unknown vulnerability",
+              "description": "No description available",
+              "url": "",
+              "cwe": [],
+              "cvss": null,
+              "range": "1.0.0 - 1.3.2",
+              "fixAvailable": {
+                "name": "react-scripts",
+                "version": "0.0.0",
+                "isSemVerMajor": true
+              },
+              "isDirect": false,
+              "effects": [
+                "@svgr/plugin-svgo"
+              ],
+              "nodes": [
+                "node_modules/svgo"
+              ]
+            },
+            {
+              "name": "webpack-dev-server",
+              "severity": "moderate",
+              "title": "webpack-dev-server users' source code may be stolen when they access a malicious web site with non-Chromium based browser",
+              "description": "No description available",
+              "url": "https://github.com/advisories/GHSA-9jgg-88mc-972h",
+              "cwe": [
+                "CWE-346"
+              ],
+              "cvss": {
+                "score": 6.5,
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
+              },
+              "range": "<=5.2.0",
+              "fixAvailable": {
+                "name": "react-scripts",
+                "version": "0.0.0",
+                "isSemVerMajor": true
+              },
+              "isDirect": false,
+              "effects": [
+                "react-scripts"
+              ],
+              "nodes": [
+                "node_modules/webpack-dev-server"
+              ]
+            }
+          ],
+          "outdatedCount": 6,
+          "vulnerableCount": 9,
+          "hasHighRiskVulns": true
         }
       }
     },
@@ -158,9 +408,9 @@
         }
       }
     },
-    "overall": "success"
+    "overall": "failed"
   },
-  "timestamp": "2025-09-26T11:39:41.411Z",
-  "runDir": "C:\\Users\\hsjagad\\CascadeProjects\\windsurf-cicd-pipeline-pre-commit\\React_demo-master\\windsurf-pipeline\\logs\\run-2025-09-26T11-38-55-224Z",
-  "reportPath": "C:\\Users\\hsjagad\\CascadeProjects\\windsurf-cicd-pipeline-pre-commit\\React_demo-master\\windsurf-pipeline\\reports\\code-review-2025-09-26-17-09.md"
+  "timestamp": "2025-09-26T11:40:47.270Z",
+  "runDir": "C:\\Users\\hsjagad\\CascadeProjects\\windsurf-cicd-pipeline-pre-commit\\React_demo-master\\windsurf-pipeline\\logs\\run-2025-09-26T11-40-20-948Z",
+  "reportPath": "C:\\Users\\hsjagad\\CascadeProjects\\windsurf-cicd-pipeline-pre-commit\\React_demo-master\\windsurf-pipeline\\reports\\code-review-2025-09-26-17-10.md"
 }
