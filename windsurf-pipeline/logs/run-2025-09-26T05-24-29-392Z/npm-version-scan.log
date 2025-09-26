@@ -1,0 +1,98 @@
+# NPM VERSION-SCAN LOG
+Started at: 2025-09-26T05:24:29.404Z
+==================================================
+
+[2025-09-26T05:24:44.564Z] [INFO] Starting npm version vulnerability scan 
+[2025-09-26T05:24:53.514Z] [ERROR] npm version scan: FAILED 
+[2025-09-26T05:24:53.514Z] [ERROR] === NPM VERSION SCAN FAILURE DETAILS === 
+[2025-09-26T05:24:53.514Z] [WARN] Outdated package: @mui/icons-material (current: 5.18.0, wanted: 5.18.0, latest: 7.3.2) 
+[2025-09-26T05:24:53.515Z] [WARN] Outdated package: @mui/material (current: 5.18.0, wanted: 5.18.0, latest: 7.3.2) 
+[2025-09-26T05:24:53.515Z] [WARN] Outdated package: husky (current: 8.0.3, wanted: 8.0.3, latest: 9.1.7) 
+[2025-09-26T05:24:53.529Z] [WARN] Outdated package: lint-staged (current: 15.5.2, wanted: 15.5.2, latest: 16.2.1) 
+[2025-09-26T05:24:53.529Z] [WARN] Outdated package: react (current: 18.3.1, wanted: 18.3.1, latest: 19.1.1) 
+[2025-09-26T05:24:53.530Z] [WARN] Outdated package: react-dom (current: 18.3.1, wanted: 18.3.1, latest: 19.1.1) 
+[2025-09-26T05:24:53.530Z] [ERROR] VULNERABILITY: @svgr/plugin-svgo 
+[2025-09-26T05:24:53.531Z] [ERROR]   Severity: HIGH 
+[2025-09-26T05:24:53.531Z] [ERROR]   Title: Unknown vulnerability 
+[2025-09-26T05:24:53.531Z] [ERROR]   Description: No description available 
+[2025-09-26T05:24:53.532Z] [ERROR]   Affected Range: <=5.5.0 
+[2025-09-26T05:24:53.532Z] [ERROR]   Direct Dependency: No 
+[2025-09-26T05:24:53.532Z] [ERROR]   Fix Available: Run 'npm audit fix' 
+[2025-09-26T05:24:53.532Z] [ERROR]   Found in: node_modules/@svgr/plugin-svgo 
+[2025-09-26T05:24:53.532Z] [ERROR]   --- 
+[2025-09-26T05:24:53.533Z] [ERROR] VULNERABILITY: @svgr/webpack 
+[2025-09-26T05:24:53.533Z] [ERROR]   Severity: HIGH 
+[2025-09-26T05:24:53.533Z] [ERROR]   Title: Unknown vulnerability 
+[2025-09-26T05:24:53.533Z] [ERROR]   Description: No description available 
+[2025-09-26T05:24:53.534Z] [ERROR]   Affected Range: 4.0.0 - 5.5.0 
+[2025-09-26T05:24:53.534Z] [ERROR]   Direct Dependency: No 
+[2025-09-26T05:24:53.534Z] [ERROR]   Fix Available: Run 'npm audit fix' 
+[2025-09-26T05:24:53.535Z] [ERROR]   Found in: node_modules/@svgr/webpack 
+[2025-09-26T05:24:53.535Z] [ERROR]   --- 
+[2025-09-26T05:24:53.535Z] [ERROR] VULNERABILITY: css-select 
+[2025-09-26T05:24:53.536Z] [ERROR]   Severity: HIGH 
+[2025-09-26T05:24:53.536Z] [ERROR]   Title: Unknown vulnerability 
+[2025-09-26T05:24:53.536Z] [ERROR]   Description: No description available 
+[2025-09-26T05:24:53.536Z] [ERROR]   Affected Range: <=3.1.0 
+[2025-09-26T05:24:53.537Z] [ERROR]   Direct Dependency: No 
+[2025-09-26T05:24:53.537Z] [ERROR]   Fix Available: Run 'npm audit fix' 
+[2025-09-26T05:24:53.537Z] [ERROR]   Found in: node_modules/svgo/node_modules/css-select 
+[2025-09-26T05:24:53.537Z] [ERROR]   --- 
+[2025-09-26T05:24:53.538Z] [ERROR] VULNERABILITY: nth-check 
+[2025-09-26T05:24:53.538Z] [ERROR]   Severity: HIGH 
+[2025-09-26T05:24:53.538Z] [ERROR]   Title: Inefficient Regular Expression Complexity in nth-check 
+[2025-09-26T05:24:53.539Z] [ERROR]   Description: No description available 
+[2025-09-26T05:24:53.539Z] [ERROR]   Affected Range: <2.0.1 
+[2025-09-26T05:24:53.539Z] [ERROR]   Direct Dependency: No 
+[2025-09-26T05:24:53.540Z] [ERROR]   More Info: https://github.com/advisories/GHSA-rp65-9cf3-cjxr 
+[2025-09-26T05:24:53.540Z] [ERROR]   Fix Available: Run 'npm audit fix' 
+[2025-09-26T05:24:53.541Z] [ERROR]   Found in: node_modules/svgo/node_modules/nth-check 
+[2025-09-26T05:24:53.541Z] [ERROR]   --- 
+[2025-09-26T05:24:53.542Z] [ERROR] VULNERABILITY: postcss 
+[2025-09-26T05:24:53.542Z] [ERROR]   Severity: MODERATE 
+[2025-09-26T05:24:53.542Z] [ERROR]   Title: PostCSS line return parsing error 
+[2025-09-26T05:24:53.543Z] [ERROR]   Description: No description available 
+[2025-09-26T05:24:53.543Z] [ERROR]   Affected Range: <8.4.31 
+[2025-09-26T05:24:53.543Z] [ERROR]   Direct Dependency: No 
+[2025-09-26T05:24:53.544Z] [ERROR]   More Info: https://github.com/advisories/GHSA-7fh5-64p2-3v2j 
+[2025-09-26T05:24:53.544Z] [ERROR]   Fix Available: Run 'npm audit fix' 
+[2025-09-26T05:24:53.544Z] [ERROR]   Found in: node_modules/resolve-url-loader/node_modules/postcss 
+[2025-09-26T05:24:53.544Z] [ERROR]   --- 
+[2025-09-26T05:24:53.545Z] [ERROR] VULNERABILITY: react-scripts 
+[2025-09-26T05:24:53.545Z] [ERROR]   Severity: HIGH 
+[2025-09-26T05:24:53.545Z] [ERROR]   Title: Unknown vulnerability 
+[2025-09-26T05:24:53.545Z] [ERROR]   Description: No description available 
+[2025-09-26T05:24:53.546Z] [ERROR]   Affected Range: >=0.1.0 
+[2025-09-26T05:24:53.546Z] [ERROR]   Direct Dependency: Yes 
+[2025-09-26T05:24:53.546Z] [ERROR]   Fix Available: Run 'npm audit fix' 
+[2025-09-26T05:24:53.546Z] [ERROR]   Found in: node_modules/react-scripts 
+[2025-09-26T05:24:53.547Z] [ERROR]   --- 
+[2025-09-26T05:24:53.547Z] [ERROR] VULNERABILITY: resolve-url-loader 
+[2025-09-26T05:24:53.547Z] [ERROR]   Severity: MODERATE 
+[2025-09-26T05:24:53.548Z] [ERROR]   Title: Unknown vulnerability 
+[2025-09-26T05:24:53.548Z] [ERROR]   Description: No description available 
+[2025-09-26T05:24:53.548Z] [ERROR]   Affected Range: 0.0.1-experiment-postcss || 3.0.0-alpha.1 - 4.0.0 
+[2025-09-26T05:24:53.548Z] [ERROR]   Direct Dependency: No 
+[2025-09-26T05:24:53.549Z] [ERROR]   Fix Available: Run 'npm audit fix' 
+[2025-09-26T05:24:53.549Z] [ERROR]   Found in: node_modules/resolve-url-loader 
+[2025-09-26T05:24:53.549Z] [ERROR]   --- 
+[2025-09-26T05:24:53.549Z] [ERROR] VULNERABILITY: svgo 
+[2025-09-26T05:24:53.550Z] [ERROR]   Severity: HIGH 
+[2025-09-26T05:24:53.550Z] [ERROR]   Title: Unknown vulnerability 
+[2025-09-26T05:24:53.550Z] [ERROR]   Description: No description available 
+[2025-09-26T05:24:53.550Z] [ERROR]   Affected Range: 1.0.0 - 1.3.2 
+[2025-09-26T05:24:53.551Z] [ERROR]   Direct Dependency: No 
+[2025-09-26T05:24:53.551Z] [ERROR]   Fix Available: Run 'npm audit fix' 
+[2025-09-26T05:24:53.552Z] [ERROR]   Found in: node_modules/svgo 
+[2025-09-26T05:24:53.552Z] [ERROR]   --- 
+[2025-09-26T05:24:53.552Z] [ERROR] VULNERABILITY: webpack-dev-server 
+[2025-09-26T05:24:53.552Z] [ERROR]   Severity: MODERATE 
+[2025-09-26T05:24:53.553Z] [ERROR]   Title: webpack-dev-server users' source code may be stolen when they access a malicious web site with non-Chromium based browser 
+[2025-09-26T05:24:53.553Z] [ERROR]   Description: No description available 
+[2025-09-26T05:24:53.553Z] [ERROR]   Affected Range: <=5.2.0 
+[2025-09-26T05:24:53.553Z] [ERROR]   Direct Dependency: No 
+[2025-09-26T05:24:53.554Z] [ERROR]   More Info: https://github.com/advisories/GHSA-9jgg-88mc-972h 
+[2025-09-26T05:24:53.554Z] [ERROR]   Fix Available: Run 'npm audit fix' 
+[2025-09-26T05:24:53.554Z] [ERROR]   Found in: node_modules/webpack-dev-server 
+[2025-09-26T05:24:53.554Z] [ERROR]   --- 
+[2025-09-26T05:24:53.555Z] [INFO] npm version scan completed. Overall success: false 

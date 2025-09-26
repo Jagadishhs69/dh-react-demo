@@ -25,14 +25,14 @@ import {
   FormControlLabel,
   Rating,
   LinearProgress,
-  Box
+  Box,
 } from '@mui/material';
 import {
   Add as AddIcon,
   Person as PersonIcon,
   Email as EmailIcon,
   Phone as PhoneIcon,
-  Settings as SettingsIcon
+  Settings as SettingsIcon,
 } from '@mui/icons-material';
 import TestConsole from './TestConsole';
 
@@ -49,9 +49,24 @@ const Dashboard = () => {
   const handleSnackbarOpen = () => setSnackbarOpen(true);
   const handleSnackbarClose = () => setSnackbarOpen(false);
   const sampleData = [
-    { id: 1, name: 'John Doe', email: 'john@example.com', phone: '+1 234 567 8900' },
-    { id: 2, name: 'Jane Smith', email: 'jane@example.com', phone: '+1 234 567 8901' },
-    { id: 3, name: 'Bob Johnson', email: 'bob@example.com', phone: '+1 234 567 8902' }
+    {
+      id: 1,
+      name: 'John Doe',
+      email: 'john@example.com',
+      phone: '+1 234 567 8900',
+    },
+    {
+      id: 2,
+      name: 'Jane Smith',
+      email: 'jane@example.com',
+      phone: '+1 234 567 8901',
+    },
+    {
+      id: 3,
+      name: 'Bob Johnson',
+      email: 'bob@example.com',
+      phone: '+1 234 567 8902',
+    },
   ];
 
   return (
@@ -69,8 +84,9 @@ const Dashboard = () => {
                 Welcome to MUI
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                This is a sample React application showcasing various Material-UI components
-                including cards, buttons, forms, and more.
+                This is a sample React application showcasing various
+                Material-UI components including cards, buttons, forms, and
+                more.
               </Typography>
               <Box sx={{ mt: 2 }}>
                 <Chip label="React" color="primary" sx={{ mr: 1 }} />
@@ -158,9 +174,7 @@ const Dashboard = () => {
               <Button variant="contained" color="primary">
                 Submit
               </Button>
-              <Button variant="outlined">
-                Reset
-              </Button>
+              <Button variant="outlined">Reset</Button>
             </CardActions>
           </Card>
         </Grid>
@@ -183,7 +197,13 @@ const Dashboard = () => {
                     primary={contact.name}
                     secondary={
                       <Box>
-                        <Box sx={{ display: 'flex', alignItems: 'center', mb: 0.5 }}>
+                        <Box
+                          sx={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            mb: 0.5,
+                          }}
+                        >
                           <EmailIcon sx={{ fontSize: 16, mr: 1 }} />
                           {contact.email}
                         </Box>
@@ -221,8 +241,8 @@ const Dashboard = () => {
         <DialogTitle>Sample Dialog</DialogTitle>
         <DialogContent>
           <Typography>
-            This is a sample dialog showcasing Material-UI's dialog component.
-            You can add forms, lists, or any other content here.
+            This is a sample dialog showcasing Material-UI&apos;s dialog
+            component. You can add forms, lists, or any other content here.
           </Typography>
           <TextField
             autoFocus
@@ -248,7 +268,7 @@ const Dashboard = () => {
         onClose={handleSnackbarClose}
       >
         <Alert onClose={handleSnackbarClose} severity="success">
-          This is a success message using Material-UI's Alert component!
+          This is a success message using Material-UI&apos;s Alert component!
         </Alert>
       </Snackbar>
     </Box>

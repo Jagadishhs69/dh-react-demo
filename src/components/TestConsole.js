@@ -5,7 +5,7 @@ import { Button, Typography, Box, Paper } from '@mui/material';
 const TestConsole = () => {
   const handleClick = () => {
     // Try typing console.log below this comment - you should see red underlines immediately
-    
+
     // Better approach: Use proper error handling and user feedback
     alert('Button clicked successfully!');
   };
@@ -16,8 +16,9 @@ const TestConsole = () => {
         Real-time Console.log Detection Test
       </Typography>
       <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-        Try typing "console.log('test')" in the handleClick function above. 
-        You should see red underlines appear immediately as you type.
+        Try typing &quot;console.log(&apos;test&apos;)&quot; in the handleClick
+        function above. You should see red underlines appear immediately as you
+        type.
       </Typography>
       <Box>
         <Button variant="contained" onClick={handleClick}>
