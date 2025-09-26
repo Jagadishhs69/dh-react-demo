@@ -9079,3 +9079,57 @@ You're using eslint.config.js, some command line flags are no longer available. 
 [summary] [2025-09-26T13:37:19.353Z] [INFO]  
 [summary] [2025-09-26T13:37:19.354Z] [INFO] FINAL STATUS: SUCCESS 
 [summary] [2025-09-26T13:37:19.354Z] [INFO] Log files location: C:\Users\hsjagad\CascadeProjects\windsurf-cicd-pipeline-pre-commit\React_demo-master\windsurf-pipeline\logs\run-2025-09-26T13-36-56-249Z 
+[language-detection] [2025-09-26T13:40:32.644Z] [INFO] Starting language detection process 
+[language-detection] [2025-09-26T13:40:32.645Z] [INFO] Detected Node.js via package.json in root 
+[language-detection] [2025-09-26T13:40:32.647Z] [INFO] Final results: 1 languages detected 
+[language-detection] [2025-09-26T13:40:32.647Z] [INFO] Languages: nodejs 
+[language-detection] [2025-09-26T13:40:32.648Z] [INFO] Primary language: nodejs 
+[language-detection] [2025-09-26T13:40:32.648Z] [INFO] Detection files: package.json 
+[dependency-check] [2025-09-26T13:40:32.652Z] [INFO] Starting dependency check for languages: nodejs
+[dependency-check] [2025-09-26T13:40:32.653Z] [INFO] Checking nodejs dependencies 
+[dependency-check] [2025-09-26T13:40:37.278Z] [INFO] nodejs dependency check: SUCCESS 
+[dependency-check] [2025-09-26T13:40:37.279Z] [INFO] Dependency check completed. Overall success: true 
+[code-quality] [2025-09-26T13:40:37.281Z] [INFO] Starting code quality checks for languages: nodejs
+[code-quality] [2025-09-26T13:40:37.282Z] [INFO] Running nodejs code quality checks 
+[code-quality] [2025-09-26T13:40:46.181Z] [INFO] nodejs code quality: SUCCESS 
+[code-quality] [2025-09-26T13:40:46.182Z] [INFO] Code quality checks completed. Overall success: true 
+[npm-version-scan] [2025-09-26T13:40:46.184Z] [INFO] Starting npm version vulnerability scan 
+[npm-version-scan] [2025-09-26T13:40:53.891Z] [INFO] npm version scan: SUCCESS 
+[npm-version-scan] [2025-09-26T13:40:53.891Z] [INFO] 6 outdated packages found (non-blocking) 
+[npm-version-scan] [2025-09-26T13:40:53.892Z] [INFO] npm version scan completed. Overall success: true 
+[secret-detection] [2025-09-26T13:40:53.894Z] [INFO] Starting secret detection scan 
+[secret-detection] [2025-09-26T13:40:53.923Z] [INFO] Secret detection: NO SECRETS FOUND 
+[secret-detection] [2025-09-26T13:40:53.924Z] [INFO] Secret detection completed. Overall success: true 
+[sast-scan] [2025-09-26T13:40:53.925Z] [INFO] Starting code coverage analysis for languages: nodejs
+[sast-scan] [2025-09-26T13:40:53.930Z] [INFO] Code coverage analysis: SUCCESS 
+[sast-scan] [2025-09-26T13:40:53.931Z] [INFO] === CODE COVERAGE RESULTS === 
+[sast-scan] [2025-09-26T13:40:53.931Z] [INFO] Total files analyzed: 4 
+[sast-scan] [2025-09-26T13:40:53.931Z] [INFO] Total lines of code: 334 
+[sast-scan] [2025-09-26T13:40:53.932Z] [INFO] Average complexity: 1 
+[sast-scan] [2025-09-26T13:40:53.932Z] [INFO] Code to total ratio: 91% 
+[sast-scan] [2025-09-26T13:40:53.932Z] [INFO] Code coverage analysis completed. Overall success: true 
+[summary] [2025-09-26T13:40:53.946Z] [INFO] PIPELINE EXECUTION SUMMARY 
+[summary] [2025-09-26T13:40:53.946Z] [INFO] ================================================== 
+[summary] [2025-09-26T13:40:53.947Z] [INFO] Execution started: 2025-09-26T13:40:32.589Z 
+[summary] [2025-09-26T13:40:53.947Z] [INFO] Execution completed: 2025-09-26T13:40:53.947Z 
+[summary] [2025-09-26T13:40:53.948Z] [INFO] Total duration: 21.36 seconds 
+[summary] [2025-09-26T13:40:53.948Z] [INFO]  
+[summary] [2025-09-26T13:40:53.948Z] [INFO] STAGE RESULTS: 
+[summary] [2025-09-26T13:40:53.949Z] [INFO] Language Detection   ✅ PASS 
+[summary] [2025-09-26T13:40:53.950Z] [INFO]   Languages detected: nodejs 
+[summary] [2025-09-26T13:40:53.950Z] [INFO]   Primary language: nodejs 
+[summary] [2025-09-26T13:40:53.951Z] [INFO] Dependency Check     ✅ PASS 
+[summary] [2025-09-26T13:40:53.951Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-26T13:40:53.952Z] [INFO] Code Quality         ✅ PASS 
+[summary] [2025-09-26T13:40:53.953Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-26T13:40:53.954Z] [INFO] NPM Version Scan     ✅ PASS 
+[summary] [2025-09-26T13:40:53.954Z] [INFO]   nodejs: SUCCESS 
+[summary] [2025-09-26T13:40:53.955Z] [INFO] Secret Detection     ✅ PASS 
+[summary] [2025-09-26T13:40:53.956Z] [INFO]   secretScan: SUCCESS 
+[summary] [2025-09-26T13:40:53.957Z] [INFO] SAST Scan            ✅ PASS 
+[summary] [2025-09-26T13:40:53.958Z] [INFO]   coverage: SUCCESS 
+[summary] [2025-09-26T13:40:53.959Z] [INFO]  
+[summary] [2025-09-26T13:40:53.959Z] [INFO] 🎉 PIPELINE SUCCESS: All checks passed! Code is ready for deployment. 
+[summary] [2025-09-26T13:40:53.960Z] [INFO]  
+[summary] [2025-09-26T13:40:53.960Z] [INFO] FINAL STATUS: SUCCESS 
+[summary] [2025-09-26T13:40:53.961Z] [INFO] Log files location: C:\Users\hsjagad\CascadeProjects\windsurf-cicd-pipeline-pre-commit\React_demo-master\windsurf-pipeline\logs\run-2025-09-26T13-40-32-589Z 

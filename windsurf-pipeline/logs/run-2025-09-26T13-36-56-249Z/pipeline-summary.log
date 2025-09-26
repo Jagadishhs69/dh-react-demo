@@ -1,0 +1,29 @@
+# SUMMARY LOG
+Started at: 2025-09-26T13:36:56.267Z
+==================================================
+
+[2025-09-26T13:37:19.342Z] [INFO] PIPELINE EXECUTION SUMMARY 
+[2025-09-26T13:37:19.343Z] [INFO] ================================================== 
+[2025-09-26T13:37:19.343Z] [INFO] Execution started: 2025-09-26T13:36:56.249Z 
+[2025-09-26T13:37:19.344Z] [INFO] Execution completed: 2025-09-26T13:37:19.344Z 
+[2025-09-26T13:37:19.344Z] [INFO] Total duration: 23.09 seconds 
+[2025-09-26T13:37:19.344Z] [INFO]  
+[2025-09-26T13:37:19.344Z] [INFO] STAGE RESULTS: 
+[2025-09-26T13:37:19.345Z] [INFO] Language Detection   ✅ PASS 
+[2025-09-26T13:37:19.346Z] [INFO]   Languages detected: nodejs 
+[2025-09-26T13:37:19.346Z] [INFO]   Primary language: nodejs 
+[2025-09-26T13:37:19.346Z] [INFO] Dependency Check     ✅ PASS 
+[2025-09-26T13:37:19.347Z] [INFO]   nodejs: SUCCESS 
+[2025-09-26T13:37:19.348Z] [INFO] Code Quality         ✅ PASS 
+[2025-09-26T13:37:19.348Z] [INFO]   nodejs: SUCCESS 
+[2025-09-26T13:37:19.349Z] [INFO] NPM Version Scan     ✅ PASS 
+[2025-09-26T13:37:19.350Z] [INFO]   nodejs: SUCCESS 
+[2025-09-26T13:37:19.350Z] [INFO] Secret Detection     ✅ PASS 
+[2025-09-26T13:37:19.351Z] [INFO]   secretScan: SUCCESS 
+[2025-09-26T13:37:19.351Z] [INFO] SAST Scan            ✅ PASS 
+[2025-09-26T13:37:19.352Z] [INFO]   coverage: SUCCESS 
+[2025-09-26T13:37:19.353Z] [INFO]  
+[2025-09-26T13:37:19.353Z] [INFO] 🎉 PIPELINE SUCCESS: All checks passed! Code is ready for deployment. 
+[2025-09-26T13:37:19.353Z] [INFO]  
+[2025-09-26T13:37:19.354Z] [INFO] FINAL STATUS: SUCCESS 
+[2025-09-26T13:37:19.354Z] [INFO] Log files location: C:\Users\hsjagad\CascadeProjects\windsurf-cicd-pipeline-pre-commit\React_demo-master\windsurf-pipeline\logs\run-2025-09-26T13-36-56-249Z 
