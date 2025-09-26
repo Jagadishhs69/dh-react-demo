@@ -20,8 +20,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Windsurf Pipeline (local development tool only - not committed)
-windsurf-pipeline/
+# Windsurf Pipeline (temporarily enabled to check final results)
+# windsurf-pipeline/
 .pipeline-status
 PIPELINE_STATUS.md
 .vscode/pipeline-status.json

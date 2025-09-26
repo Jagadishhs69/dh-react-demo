@@ -19,8 +19,8 @@
           "audit": {
             "success": false,
             "error": "Command failed: npm audit --audit-level=moderate --dry-run\n",
-            "code": 1,
-            "stdout": "# npm audit report\n\nnth-check  <2.0.1\nSeverity: high\nInefficient Regular Expression Complexity in nth-check - https://github.com/advisories/GHSA-rp65-9cf3-cjxr\nfix available via `npm audit fix --force`\nWill install react-scripts@0.0.0, which is a breaking change\nnode_modules/svgo/node_modules/nth-check\n  css-select  <=3.1.0\n  Depends on vulnerable versions of nth-check\n  node_modules/svgo/node_modules/css-select\n    svgo  1.0.0 - 1.3.2\n    Depends on vulnerable versions of css-select\n    node_modules/svgo\n      @svgr/plugin-svgo  <=5.5.0\n      Depends on vulnerable versions of svgo\n      node_modules/@svgr/plugin-svgo\n        @svgr/webpack  4.0.0 - 5.5.0\n        Depends on vulnerable versions of @svgr/plugin-svgo\n        node_modules/@svgr/webpack\n          react-scripts  >=0.1.0\n          Depends on vulnerable versions of @svgr/webpack\n          Depends on vulnerable versions of resolve-url-loader\n          Depends on vulnerable versions of webpack-dev-server\n          node_modules/react-scripts\n\npostcss  <8.4.31\nSeverity: moderate\nPostCSS line return parsing error - https://github.com/advisories/GHSA-7fh5-64p2-3v2j\nfix available via `npm audit fix --force`\nWill install react-scripts@0.0.0, which is a breaking change\nnode_modules/resolve-url-loader/node_modules/postcss\n  resolve-url-loader  0.0.1-experiment-postcss || 3.0.0-alpha.1 - 4.0.0\n  Depends on vulnerable versions of postcss\n  node_modules/resolve-url-loader\n\nwebpack-dev-server  <=5.2.0\nSeverity: moderate\nwebpack-dev-server users' source code may be stolen when they access a malicious web site with non-Chromium based browser - https://github.com/advisories/GHSA-9jgg-88mc-972h\nwebpack-dev-server users' source code may be stolen when they access a malicious web site - https://github.com/advisories/GHSA-4v9v-hfq4-rm2v\nfix available via `npm audit fix --force`\nWill install react-scripts@0.0.0, which is a breaking change\nnode_modules/webpack-dev-server\n\n9 vulnerabilities (3 moderate, 6 high)\n\nTo address all issues (including breaking changes), run:\n  npm audit fix --force\n",
+            "code": null,
+            "stdout": "",
             "stderr": ""
           },
           "vulnerabilities": true,
@@ -38,7 +38,7 @@
             "eslint": {
               "success": true,
               "stdout": "",
-              "stderr": "(node:17760) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/hsjagad/CascadeProjects/windsurf-cicd-pipeline-pre-commit/React_demo-master/eslint.config.js?mtime=1758882354885 is not specified and it doesn't parse as CommonJS.\nReparsing as ES module because module syntax was detected. This incurs a performance overhead.\nTo eliminate this warning, add \"type\": \"module\" to C:\\Users\\hsjagad\\CascadeProjects\\windsurf-cicd-pipeline-pre-commit\\React_demo-master\\package.json.\n(Use `node --trace-warnings ...` to show where the warning was created)"
+              "stderr": "(node:13884) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/hsjagad/CascadeProjects/windsurf-cicd-pipeline-pre-commit/React_demo-master/eslint.config.js?mtime=1758882354885 is not specified and it doesn't parse as CommonJS.\nReparsing as ES module because module syntax was detected. This incurs a performance overhead.\nTo eliminate this warning, add \"type\": \"module\" to C:\\Users\\hsjagad\\CascadeProjects\\windsurf-cicd-pipeline-pre-commit\\React_demo-master\\package.json.\n(Use `node --trace-warnings ...` to show where the warning was created)"
             },
             "prettier": {
               "success": true,
@@ -59,44 +59,7 @@
       "results": {
         "nodejs": {
           "success": false,
-          "outdatedPackages": [
-            {
-              "name": "@mui/icons-material",
-              "current": "5.18.0",
-              "wanted": "5.18.0",
-              "latest": "7.3.2"
-            },
-            {
-              "name": "@mui/material",
-              "current": "5.18.0",
-              "wanted": "5.18.0",
-              "latest": "7.3.2"
-            },
-            {
-              "name": "husky",
-              "current": "8.0.3",
-              "wanted": "8.0.3",
-              "latest": "9.1.7"
-            },
-            {
-              "name": "lint-staged",
-              "current": "15.5.2",
-              "wanted": "15.5.2",
-              "latest": "16.2.1"
-            },
-            {
-              "name": "react",
-              "current": "18.3.1",
-              "wanted": "18.3.1",
-              "latest": "19.1.1"
-            },
-            {
-              "name": "react-dom",
-              "current": "18.3.1",
-              "wanted": "18.3.1",
-              "latest": "19.1.1"
-            }
-          ],
+          "outdatedPackages": [],
           "vulnerablePackages": [
             {
               "name": "@svgr/plugin-svgo",
@@ -311,7 +274,7 @@
               ]
             }
           ],
-          "outdatedCount": 6,
+          "outdatedCount": 0,
           "vulnerableCount": 9,
           "hasHighRiskVulns": true
         }
@@ -410,7 +373,7 @@
     },
     "overall": "failed"
   },
-  "timestamp": "2025-09-26T11:40:47.270Z",
-  "runDir": "C:\\Users\\hsjagad\\CascadeProjects\\windsurf-cicd-pipeline-pre-commit\\React_demo-master\\windsurf-pipeline\\logs\\run-2025-09-26T11-40-20-948Z",
-  "reportPath": "C:\\Users\\hsjagad\\CascadeProjects\\windsurf-cicd-pipeline-pre-commit\\React_demo-master\\windsurf-pipeline\\reports\\code-review-2025-09-26-17-10.md"
+  "timestamp": "2025-09-26T11:57:04.933Z",
+  "runDir": "C:\\Users\\hsjagad\\CascadeProjects\\windsurf-cicd-pipeline-pre-commit\\React_demo-master\\windsurf-pipeline\\logs\\run-2025-09-26T11-55-55-436Z",
+  "reportPath": "C:\\Users\\hsjagad\\CascadeProjects\\windsurf-cicd-pipeline-pre-commit\\React_demo-master\\windsurf-pipeline\\reports\\code-review-2025-09-26-17-27.md"
 }
