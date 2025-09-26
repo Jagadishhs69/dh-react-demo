@@ -239,10 +239,15 @@ class CodeReviewGenerator {
                     analysis.suggestions.push(`Run 'npm update' to update packages`);
                 }
                 
-                if (result.vulnerablePackages && result.vulnerablePackages.length > 0) {
-                    // Basic version: Group all vulnerabilities into one issue
-                    analysis.issues.push(`${result.vulnerablePackages.length} vulnerable packages detected`);
-                    analysis.suggestions.push(`Run 'npm audit fix' to resolve vulnerabilities`);
+                if (result.productionVulnCount && result.productionVulnCount > 0) {
+                    // Only report critical production vulnerabilities that actually block the pipeline
+                    analysis.issues.push(`${result.productionVulnCount} critical production vulnerabilities detected`);
+                    analysis.suggestions.push(`Run 'npm audit fix' to resolve critical vulnerabilities`);
+                } else if (result.vulnerablePackages && result.vulnerablePackages.length > 0) {
+                    // Report dev-tool vulnerabilities as informational only
+                    const devToolCount = result.vulnerablePackages.length - (result.productionVulnCount || 0);
+                    analysis.warnings.push(`${result.vulnerablePackages.length} total vulnerabilities found (${devToolCount} dev-tool, ${result.productionVulnCount || 0} production)`);
+                    analysis.suggestions.push(`Dev-tool vulnerabilities are non-blocking - only critical production vulnerabilities block the pipeline`);
                 }
             }
         }

@@ -842,6 +842,7 @@ class LocalPipelineRunner {
             if (results.nodejs.vulnerablePackages && results.nodejs.vulnerablePackages.length > 0) {
                 const devToolVulns = results.nodejs.vulnerablePackages.length - (results.nodejs.productionVulnCount || 0);
                 this.logToStage('npm-version-scan', 'info', `${results.nodejs.vulnerablePackages.length} total vulnerabilities found (${devToolVulns} dev-tool, ${results.nodejs.productionVulnCount || 0} production)`);
+                this.logToStage('npm-version-scan', 'info', `Pipeline only blocks on ${results.nodejs.productionVulnCount || 0} critical production vulnerabilities`);
             }
         } else {
             this.log('info', '  Skipping npm version scan - no Node.js project detected');

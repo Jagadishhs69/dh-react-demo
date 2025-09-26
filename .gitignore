@@ -20,7 +20,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Windsurf Pipeline (temporarily enabled to debug inconsistency issues)
+# Windsurf Pipeline (temporarily enabled to fix reporting inconsistency)
 # windsurf-pipeline/
 .pipeline-status
 PIPELINE_STATUS.md
